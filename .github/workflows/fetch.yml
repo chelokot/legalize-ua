@@ -1,0 +1,30 @@
+name: Fetch Rada
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: fetch
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 350
+    steps:
+      - name: Join tailnet via Ukrainian exit node
+        uses: tailscale/github-action@v4.2.0
+        with:
+          oauth-client-id: ${{ secrets.TS_OAUTH_CLIENT_ID }}
+          oauth-secret: ${{ secrets.TS_OAUTH_SECRET }}
+          tags: tag:ci
+          args: --exit-node=odesa
+
+      - name: Check Ukrainian egress
+        run: |
+          curl -fsS https://ipinfo.io/json | jq '{country, city, org}'
+          test "$(curl -fsS https://ipinfo.io/country)" = UA
+          curl -fsS -o /dev/null -w 'data.rada.gov.ua: %{http_code}\n' -A OpenData https://data.rada.gov.ua/ogd/zak/laws/data/csv/stan.txt
