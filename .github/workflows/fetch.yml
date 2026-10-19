@@ -25,6 +25,7 @@ jobs:
 
       - name: Check Ukrainian egress
         run: |
-          curl -fsS https://ipinfo.io/json | jq '{country, city, org}'
-          test "$(curl -fsS https://ipinfo.io/country)" = UA
+          country=$(curl -fsS https://www.cloudflare.com/cdn-cgi/trace | sed -n 's/^loc=//p')
+          echo "egress country: $country"
+          test "$country" = UA
           curl -fsS -o /dev/null -w 'data.rada.gov.ua: %{http_code}\n' -A OpenData https://data.rada.gov.ua/ogd/zak/laws/data/csv/stan.txt
