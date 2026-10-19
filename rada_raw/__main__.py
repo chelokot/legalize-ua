@@ -24,7 +24,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--deadline-seconds", type=int, default=19200)
     parser.add_argument("--rate", type=float, default=1.0, help="starting requests per second")
     parser.add_argument("--max-rate", type=float, default=1.5)
-    parser.add_argument("--workers", type=int, default=3)
+    parser.add_argument("--workers", type=int, default=8)
     return parser.parse_args()
 
 
