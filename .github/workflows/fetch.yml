@@ -2,9 +2,22 @@ name: Fetch Rada
 
 on:
   workflow_dispatch:
+    inputs:
+      batch_size:
+        description: Editions per commit
+        default: "500"
+      max_requests:
+        description: Stop after this many editions (0 means no limit, and continues in a new run)
+        default: "0"
+      rate:
+        description: Starting requests per second to Rada
+        default: "1.0"
+  schedule:
+    - cron: "17 3 * * *"
 
 permissions:
-  contents: read
+  contents: write
+  actions: write
 
 concurrency:
   group: fetch
@@ -15,6 +28,16 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 350
     steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          fetch-depth: 1
+          filter: blob:none
+          sparse-checkout: |
+            .github
+            rada_raw
+            raw/dumps
+            raw/manifest
+
       - name: Join tailnet via Ukrainian exit node
         uses: tailscale/github-action@v4.2.0
         with:
@@ -28,4 +51,20 @@ jobs:
           country=$(curl -fsS https://www.cloudflare.com/cdn-cgi/trace | sed -n 's/^loc=//p')
           echo "egress country: $country"
           test "$country" = UA
-          curl -fsS -o /dev/null -w 'data.rada.gov.ua: %{http_code}\n' -A OpenData https://data.rada.gov.ua/ogd/zak/laws/data/csv/stan.txt
+
+      - name: Fetch
+        id: fetch
+        env:
+          BATCH_SIZE: ${{ inputs.batch_size || '500' }}
+          MAX_REQUESTS: ${{ inputs.max_requests || '0' }}
+          RATE: ${{ inputs.rate || '1.0' }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          python3 -m rada_raw --root raw --batch-size "$BATCH_SIZE" --max-requests "$MAX_REQUESTS" --rate "$RATE"
+
+      - name: Continue in a new run
+        if: steps.fetch.outputs.stored != '0' && steps.fetch.outputs.remaining != '0' && (inputs.max_requests || '0') == '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run fetch.yml -R "$GITHUB_REPOSITORY" -f batch_size="${{ inputs.batch_size || '500' }}" -f rate="${{ inputs.rate || '1.0' }}"

@@ -1,0 +1,22 @@
+name: Test
+
+on:
+  push:
+    paths: ["rada_raw/**", "tests/**", ".github/workflows/test.yml"]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          fetch-depth: 1
+          filter: blob:none
+          sparse-checkout: |
+            rada_raw
+            tests
+      - run: python3 -m unittest discover -s tests -v
