@@ -10,10 +10,15 @@ MIN_RATE = 0.2
 SPEEDUP_AFTER = 300
 DEFAULT_RETRY_AFTER = 60.0
 BACKOFF_SECONDS = (5, 15, 45, 120, 300)
+DDOS_SHIELD_MARKER = b"DDoS"
 
 
 class Blocked(Exception):
     pass
+
+
+def is_block_page(status: int, body: bytes) -> bool:
+    return status == 403 and DDOS_SHIELD_MARKER in body
 
 
 class Unavailable(Exception):
@@ -77,7 +82,7 @@ class RadaClient:
                 retry_after = response.getheader("Retry-After", "")
                 self._pacer.throttled(float(retry_after) if retry_after.isdigit() else DEFAULT_RETRY_AFTER)
                 continue
-            if response.status == 403:
+            if is_block_page(response.status, body):
                 raise Blocked(path)
             if response.status >= 500:
                 time.sleep(backoff)
