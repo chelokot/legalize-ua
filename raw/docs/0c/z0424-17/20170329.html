@@ -1,0 +1,180 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="robots" content="noarchive">
+<meta name="googlebot" content="noarchive">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" href="https://zakonst.rada.gov.ua/images/mobi-styles.css" media="screen" />
+
+<meta name="Description" content="Мін'юст України, Адміністрація Держспецзв’язку; Наказ від 29.03.2017 № 1017/5/206">
+<meta name="Created" content="Wed, 29 Mar 2017 06:26:00 GMT">
+<meta name="DocumentDate" content="Wed, 29 Mar 2017 06:26:00 GMT">
+<meta name="Last-Modified" content="Mon, 10 Apr 2017 07:10:05 GMT">
+<meta name="Dates" content="29.03.2017">
+<meta name="Numbers" content="1017/5/206">
+<meta name="Types" content="Наказ">
+<meta name="Organs" content="Мін'юст України, Адміністрація Держспецзв’язку">
+<meta name="Stan" content="Чинний">
+<meta name="Nreg" content="z0424-17">
+<title>Зміни до Вимог до формату підписаних даних</title>
+</head><body>
+<h2>Мін'юст України, Адміністрація Держспецзв’язку; Наказ від 29.03.2017 № 1017/5/206</h2>
+<h1>Зміни до Вимог до формату підписаних даних</h1>
+<h3>Реєстрація: Мін'юст України від 29.03.2017 № 424/30292</h3><h4>Стан: Чинний</h4>
+<h5>Ідентифікатор: z0424-17</h5>
+<hr>
+<h3>Текст документа від 29.03.2017:</h3>
+<div id=article>
+<div><a name="n2"></a>
+<table width="100%" border=0 cellpadding=0 cellspacing=0>
+<tr valign=top>
+<td width="60%">
+<p> <br> </p>
+</td>
+<td width="40%">
+<p> ЗАТВЕРДЖЕНО
+<br> Наказ
+<br> Міністерства юстиції України,
+<br> Адміністрації Державної служби
+<br> спеціального зв’язку та захисту
+<br> інформації України
+<br><a href="/go/z0422-17">29.03.2017&nbsp; № 1017/5/206</a></p>
+</td>
+</tr>
+</table>
+</div>
+<div><a name="n3"></a>
+<table width="100%" border=0 cellpadding=0 cellspacing=0>
+<tr valign=top>
+<td width="60%">
+<p> <br> </p>
+</td>
+<td width="40%">
+<p> Зареєстровано в Міністерстві
+<br> юстиції України
+<br> 29 березня 2017 р.
+<br> за № 424/30292 </p>
+</td>
+</tr>
+</table>
+</div>
+<p><a name="n4"></a>
+ЗМІНИ
+<br> до <a href="/go/z1401-12">Вимог до формату підписаних даних</a></p>
+<p><a name="n5"></a>
+1. У <a href="/go/z1401-12">розділі І</a>:</p>
+<p><a name="n6"></a>
+1) <a href="/go/z1401-12">пункт 1.8</a> викласти в такій редакції:</p>
+<p><a name="n7"></a>
+«1.8. ЕЦП обчислюється за криптографічними алгоритмами, визначеними у ДСТУ 4145-2002 «Інформаційна технологія. Криптографічний захист інформації. Електронний цифровий підпис, що ґрунтується на еліптичних кривих», затвердженому наказом Державного комітету України з питань технічного регулювання та споживчої політики від 28 грудня 2002 року № 31 (далі - ДСТУ 4145-2002). Геш-функція обчислюється одним з криптоалгоритмів за:</p>
+<p><a name="n8"></a>
+ГОСТ 34.311-95 «Информационная технология. Криптографическая защита информации. Функция хэширования», затвердженим наказом Державного комітету України з питань технічного регулювання та споживчої політики від 21 жовтня 1997 року № 640 (далі - ГОСТ 34.311-95);</p>
+<p><a name="n9"></a>
+ДСТУ 7564:2014 «Інформаційні технології. Криптографічний захист інформації. Функція гешування», затвердженим наказом Міністерства економічного розвитку і торгівлі України від 02 грудня 2014 року № 1431 (далі - ДСТУ 7564-2014).»;</p>
+<p><a name="n10"></a>
+2) доповнити розділ новим пунктом 1.11 такого змісту:</p>
+<p><a name="n11"></a>
+«1.11. Для визначення алгоритму гешування згідно з ДСТУ 7564-2014 поле «algorithm» типу «AlgorithmIdentifier» може мати такі значення: </p>
+<p><a name="n12"></a>
+Dstu7564(256) OBJECT IDENTIFIER ::= {iso(1) member-body(2) Ukraine(804) root(2) security(1) cryptography(1) pki(1) alg(1) hash(2) Dstu7564(2) 1}</p>
+<p><a name="n13"></a>
+Dstu7564(384) OBJECT IDENTIFIER ::= {iso(1) member-body(2) Ukraine(804) root(2) security(1) cryptography(1) pki(1) alg(1) hash(2) Dstu7564(2) 2}</p>
+<p><a name="n14"></a>
+Dstu7564(512) OBJECT IDENTIFIER ::= {iso(1) member-body(2) Ukraine(804) root(2) security(1) cryptography(1) pki(1) alg(1) hash(2) Dstu7564(2) 3}</p>
+<p><a name="n15"></a>
+Поле «parameters» повинно бути відсутнє.</p>
+<p><a name="n16"></a>
+При використанні функції гешування за ДСТУ 7564-2014 в операціях формування та перевіряння електронного цифрового підпису режим обчислення геш-значення визначається відповідно до <a href="/go/z1398-12">Вимог до формату посиленого сертифіката відкритого ключа</a>, затверджених наказом Міністерства юстиції України, Адміністрації Державної служби спеціального зв’язку та захисту інформації України від 20 серпня 2012 року № 1236/5/453, зареєстрованих у Міністерстві юстиції України 20 серпня 2012 року за № 1398/21710.</p>
+<p><a name="n17"></a>
+В усіх інших операціях обчислення значення геш-функції згідно з ДСТУ 7564-2014 рекомендується використовувати режим гешування з формуванням геш-значення завдовжки 256 бітів.».</p>
+<p><a name="n18"></a>
+2. У <a href="/go/z1401-12">розділі IV</a>:</p>
+<p><a name="n19"></a>
+1) <a href="/go/z1401-12">підпункт 4.2.2</a> пункту 4.2 викласти в такій редакції:</p>
+<p><a name="n20"></a>
+«4.2.2. Поле «digestAlgorithms» містить алгоритми гешування, що були використані під час формування ЕЦП.</p>
+<p><a name="n21"></a>
+DigestAlgorithmIdentifiers ::= SET OF DigestAlgorithmIdentifier</p>
+<p><a name="n22"></a>
+DigestAlgorithmIdentifier ::= AlgorithmIdentifier</p>
+<p><a name="n23"></a>
+Поле «digestAlgorithms» може містити об’єктні ідентифікатори алгоритмів гешування, які визначаються ГОСТ 34.311-95 або ДСТУ 7564-2014.»;</p>
+<p><a name="n24"></a>
+2) <a href="/go/z1401-12">підпункт 4.3.5</a> пункту 4.3 викласти в такій редакції:</p>
+<p><a name="n25"></a>
+«4.3.5. Поле «signatureAlgorithm» містить ідентифікатор алгоритму цифрового підпису.</p>
+<p><a name="n26"></a>
+Поле «algorithm» поля «signatureAlgorithm» для алгоритму цифрового підпису ДСТУ-4145:2002 з геш-функцією за ДСТУ 7564-2014 може мати такі значення:</p>
+<p><a name="n27"></a>
+Dstu4145WithDstu7564(256) OBJECT IDENTIFIER ::= {iso(1) member-body(2) Ukraine(804) root (2) security(1) cryptography(1) pki(1) alg(1)sym(3) Dstu4145WithDstu7564(3) 1}</p>
+<p><a name="n28"></a>
+Dstu4145WithDstu7564(384) OBJECT IDENTIFIER ::= {iso(1) member-body(2) Ukraine(804) root (2) security(1) cryptography(1) pki(1) alg(1)sym(3) Dstu4145WithDstu7564(3) 2}</p>
+<p><a name="n29"></a>
+Dstu4145WithDstu7564(512) OBJECT IDENTIFIER ::= {iso(1) member-body(2) Ukraine(804) root (2) security(1) cryptography(1) pki(1) alg(1)sym(3) Dstu4145WithDstu7564(3) 3}</p>
+<p><a name="n30"></a>
+У цьому випадку поле «parameters» поля «signatureAlgorithm» відсутнє.»;</p>
+<p><a name="n31"></a>
+3) <a href="/go/z1401-12">пункт 4.11</a> викласти в такій редакції:</p>
+<p><a name="n32"></a>
+«4.11. Атрибут «complete-certificate-references» містить посилання на всі сертифікати Центрів, що використовуються для перевірки підпису. Посилання на сертифікат підписувача до зазначеного атрибута не включається. Посилання на сертифікат підписувача включається до атрибута «ESS signing-certificate v2».</p>
+<p><a name="n33"></a>
+Значення атрибута «complete-certificate-references» має тип «CompleteCertificateRefs».</p>
+<p><a name="n34"></a>
+CompleteCertificateRefs ::= SEQUENCE OF OtherCertID</p>
+<p><a name="n35"></a>
+OtherCertID ::= SEQUENCE {</p>
+<p><a name="n36"></a>
+otherCertHashOtherHash,</p>
+<p><a name="n37"></a>
+issuerSerial IssuerSerial OPTIONAL }</p>
+<p><a name="n38"></a>
+OtherHash ::= CHOICE {</p>
+<p><a name="n39"></a>
+otherHashOtherHashAlgAndValue}</p>
+<p><a name="n40"></a>
+OtherHashValue ::= OCTET STRING</p>
+<p><a name="n41"></a>
+OtherHashAlgAndValue ::= SEQUENCE {</p>
+<p><a name="n42"></a>
+hashAlgorithmAlgorithmIdentifier,</p>
+<p><a name="n43"></a>
+hashValueOtherHashValue }</p>
+<p><a name="n44"></a>
+Значення типу OtherHashAlgAndValue обмежується використанням функцій гешування, які визначаються ДСТУ 7564-2014 або ГОСТ 34.311-95.».</p>
+<p><a name="n45"></a>
+3. <a href="/go/z1401-12">Пункт 5.3</a> розділу V доповнити новим підпунктом 5.3.5 такого змісту:</p>
+<p><a name="n46"></a>
+«5.3.5. При обчисленні значення геш-функції згідно з ДСТУ 7564-2014 режим обчислення геш-значення визначається відповідно до <a href="/go/z1398-12">Вимог до формату посиленого сертифіката відкритого ключа</a>, затверджених наказом Міністерства юстиції України, Адміністрації Державної служби спеціального зв’язку та захисту інформації України від 20 серпня 2012 року № 1236/5/453, зареєстрованих у Міністерстві юстиції України 20 серпня 2012 року за № 1398/21710, згідно з пунктом 1.11 розділу I цих Вимог.».</p>
+<div><a name="n47"></a>
+<table width="100%" border=0 cellpadding=0 cellspacing=0>
+<tr valign=top>
+<td width="42%">
+<p> Директор Департаменту
+<br> приватного права
+<br> Міністерства юстиції України </p>
+</td>
+<td width="70%">
+<p><br><br> О. Ференс </p>
+</td>
+</tr>
+</table>
+</div>
+<div><a name="n48"></a>
+<table width="100%" border=0 cellpadding=0 cellspacing=0>
+<tr valign=top>
+<td width="42%">
+<p> Директор Департаменту
+<br> захисту інформації
+<br> Адміністрації Державної
+<br> служби спеціального зв’язку
+<br> та захисту інформації України </p>
+</td>
+<td width="70%">
+<p><br><br><br><br> А. Пушкарьов </p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<hr>
+<div align=right>&copy; <a href="https://data.rada.gov.ua">Офіційний вебпортал парламенту України<br />https://www.rada.gov.ua/</a></div>
+</body></html>
