@@ -1,0 +1,1781 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="robots" content="noarchive">
+<meta name="googlebot" content="noarchive">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" href="https://zakonst.rada.gov.ua/images/mobi-styles.css" media="screen" />
+
+<meta name="Description" content="Мін'юст України, Адміністрація Держспецзв’язку; Наказ, Вимоги, Опис від 20.08.2012 № 1236/5/453 (Редакція станом на 07.12.2012)">
+<meta name="Created" content="Mon, 20 Aug 2012 14:21:00 GMT">
+<meta name="DocumentDate" content="Fri, 07 Dec 2012 15:21:00 GMT">
+<meta name="Last-Modified" content="Fri, 07 Jun 2013 07:50:05 GMT">
+<meta name="Dates" content="20.08.2012">
+<meta name="Numbers" content="1236/5/453">
+<meta name="Types" content="Наказ, Вимоги, Опис">
+<meta name="Organs" content="Мін'юст України, Адміністрація Держспецзв’язку">
+<meta name="Stan" content="Втратив чинність">
+<meta name="Nreg" content="z1403-12">
+<title>Вимоги до протоколу визначення статусу сертифіката</title>
+</head><body>
+<h2>Мін'юст України, Адміністрація Держспецзв’язку; Наказ, Вимоги, Опис від 20.08.2012 № 1236/5/453</h2>
+<h1>Вимоги до протоколу визначення статусу сертифіката</h1>
+<h3>Реєстрація: Мін'юст України від 20.08.2012 № 1403/21715</h3><h4>Стан: Втратив чинність</h4>
+<h5>Ідентифікатор: z1403-12</h5>
+<hr>
+<h3>Текст документа від 07.12.2012:</h3>
+<div id=article>
+<div><a name="n2"></a>
+<table width="100%" border=0 cellpadding=0 cellspacing=0>
+<tr valign=top>
+<td width="60%">
+<p> <br> </p>
+</td>
+<td width="40%">
+<p> ЗАТВЕРДЖЕНО
+<br> Наказ Міністерства
+<br> юстиції України,
+<br> Адміністрації Державної
+<br> служби спеціального зв’язку
+<br> та захисту інформації України
+<br><a href="/go/z1398-12">20.08.2012&nbsp; № 1236/5/453</a></p>
+</td>
+</tr>
+</table>
+</div>
+<div><a name="n3"></a>
+<table width="100%" border=0 cellpadding=0 cellspacing=0>
+<tr valign=top>
+<td width="60%">
+<p> <br> </p>
+</td>
+<td width="40%">
+<p> Зареєстровано в Міністерстві
+<br> юстиції України
+<br> 20 серпня 2012 р.
+<br> за № 1403/21715 </p>
+</td>
+</tr>
+</table>
+</div>
+<p><a name="n4"></a>
+ВИМОГИ
+<br> до протоколу визначення статусу сертифіката </p>
+<p><a name="n167"></a>
+{Із змінами, внесеними згідно з Наказом Міністерства юстиції
+<br><a href="/go/z1959-12">№ 1716/5/667 від 22.11.2012</a>}</p>
+<p><a name="n5"></a>
+I. Загальні положення </p>
+<p><a name="n6"></a>
+1.1. Ці Вимоги визначають процедуру інтерактивного визначення статусу сертифіката та формати даних.</p>
+<p><a name="n7"></a>
+1.2. У цих Вимогах терміни вживаються у такому значенні:</p>
+<p><a name="n8"></a>
+користувач - особа, що користується послугою інтерактивного визначення статусу сертифіката і взаємодіє зі службою інтерактивного визначення статусу сертифіката (далі - OCSP-сервер);</p>
+<p><a name="n9"></a>
+служба інтерактивного визначення статусу сертифіката (OCSP-сервер) - сервісна служба центру сертифікації ключів, яка за запитами користувачів визначає статус сертифікатів та надсилає відповідь, де зазначається статус сертифіката, який перевіряється, на даний момент.</p>
+<p><a name="n10"></a>
+Інші терміни застосовуються у значеннях, наведених у <a href="/go/852-15">Законі України “Про електронний цифровий підпис”</a>, <a href="/go/903-2004-%D0%BF">Порядку акредитації центру сертифікації ключів</a>, затвердженому постановою Кабінету Міністрів України від 13 липня 2004 року № 903, <a href="/go/z0104-05">Правилах посиленої сертифікації</a>, затверджених наказом Департаменту спеціальних телекомунікаційних систем та захисту інформації Служби безпеки України від 13 січня 2005 року № 3 (у редакції наказу Департаменту спеціальних телекомунікаційних систем та захисту інформації Служби безпеки України від 10 травня 2006 року № 50), зареєстрованих у Міністерстві юстиції України 27 січня 2005 року за № 104/10384, інших нормативно-правових актах з питань криптографічного та технічного захисту інформації.</p>
+<p><a name="n11"></a>
+1.3. Формати даних представлено у нотації ASN.1, визначеній у міжнародному стандарті ISO/IEC 8824 “Information technology - Open Systems Interconnection - Specification of Abstract Syntax Notation One (ASN.1)” / ДСТУ ISO/ІЕС 8824-3:2008 “Інформаційні технології. Нотація абстрактного синтаксису 1 (ASN.1)” - частина 3. Специфікація обмежень (ISO/IEC 8824-3:2002, IDT), затвердженому наказом Державного комітету України з питань технічного регулювання та споживчої політики від 26 грудня 2008 року № 508 (із змінами).</p>
+<p><a name="n12"></a>
+<a href="#n154">Формати даних у нотації ASN.1, що застосовуються при реалізації протоколу визначення статусу сертифіката</a>, наведено у додатку 1 до цих Вимог.</p>
+<p><a name="n168"></a>
+{Абзац другий пункту 1.3 розділу I із змінами, внесеними згідно з Наказом Міністерства юстиції <a href="/go/z1959-12">№ 1716/5/667</a> від 22.11.2012 } </p>
+<p><a name="n13"></a>
+1.4. Усі структури даних кодують за правилами DER згідно з міжнародним стандартом ISO/IEC 8825-1:2002 “Information technology - ASN.1 Encoding Rules - Part 1: Specification of Basic Encoding Rules (BER), Canonical Encoding Rules (CER) and Distinguished Encoding Rules (DER)” (далі - ISO/IEC 8825-1:2002).</p>
+<p><a name="n14"></a>
+1.5. Ці Вимоги засновані на міжнародному стандарті RFC 2560 “Internet X.509 Public Key Infrastructure Online Certificate Status Protocol - OCSP”.</p>
+<p><a name="n15"></a>
+1.6. Ці Вимоги не дублюють стандарт ISO/IEC 8825-1:2002, а описують положення цього стандарту та формати полів. У разі виникнення розбіжностей між положеннями зазначеного стандарту та положеннями цих Вимог застосовуються положення цих Вимог.</p>
+<p><a name="n16"></a>
+1.7. Положення цих Вимог є обов’язковими для програмно-технічних комплексів акредитованих центрів сертифікації ключів та надійних засобів електронного цифрового підпису. Правильність реалізації протоколу визначення статусу сертифіката у надійних засобах електронного цифрового підпису підтверджується сертифікатом відповідності або позитивним експертним висновком за результатами державної експертизи у сфері криптографічного захисту інформації.</p>
+<p><a name="n17"></a>
+1.8. Для визначення алгоритму гешування згідно з ГОСТ 34.311-95 “Информационная технология. Криптографическая защита информации. Функция хэширования”, затвердженим наказом Державного комітету України з питань технічного регулювання та споживчої політики від 21 жовтня 1997 року № 640 (далі - ГОСТ 34.311-95), поле “algorithm” повинно мати значення:</p>
+<p><a name="n18"></a>
+Gost34311 OBJECT IDENTIFIER ::= {iso(1) member-body(2) Ukraine(804) root(2) security(1) cryptography(1) pki(1) alg(1) hash (2) 1}</p>
+<p><a name="n19"></a>
+Поле “parameters” повинно бути відсутнє.</p>
+<p><a name="n20"></a>
+При обчисленні значення геш-функції стартовий вектор H функції гешування згідно з ГОСТ 34.311-95 встановлюється рівним 256 нульовим бітам.</p>
+<p><a name="n21"></a>
+В операціях формування та перевіряння підпису при обчисленні значення геш-функції згідно з ГОСТ 34.311-95 повинен використовуватися довгостроковий ключовий елемент (далі - ДКЕ), що вказаний у параметрах ключа підпису.</p>
+<p><a name="n22"></a>
+В усіх інших операціях обчислення значення геш-функції згідно з ГОСТ 34.311-95 повинен використовуватися ДКЕ № 1, наведений у додатку 1 до <a href="/go/z0729-07">Інструкції про порядок постачання і використання ключів до засобів криптографічного захисту інформації</a>, затвердженої наказом Адміністрації Державної служби спеціального зв’язку та захисту інформації України від 12 червня 2007 року № 114, зареєстрованої в Міністерстві юстиції України 25 червня 2007 року за № 729/13996 (із змінами) (далі - ДКЕ № 1).</p>
+<p><a name="n23"></a>
+ДКЕ № 1 використовується як ДКЕ “за умовчанням”.</p>
+<p><a name="n24"></a>
+Для сумісності з попередніми рішеннями при перевірці значення геш-функції згідно з ГОСТ 34.311-95 допускається використання ДКЕ, що вказаний у параметрах ключа підпису.</p>
+<p><a name="n25"></a>
+II. Процедура інтерактивного визначення статусу сертифіката </p>
+<p><a name="n26"></a>
+2.1. Під час інтерактивного визначення статусу сертифіката користувач та OCSP-сервер виконують такі дії:</p>
+<p><a name="n27"></a>
+2.1.1. Користувач формує запит на інтерактивну перевірку статусу сертифіката (далі - запит) та надсилає його до OCSP-сервера.</p>
+<p><a name="n28"></a>
+Запит включає:</p>
+<p><a name="n29"></a>
+версію протоколу;</p>
+<p><a name="n30"></a>
+службовий запит;</p>
+<p><a name="n31"></a>
+ідентифікатор необхідного сертифіката;</p>
+<p><a name="n32"></a>
+необов’язкові розширення, які може обробляти OCSP-сервер.</p>
+<p><a name="n33"></a>
+2.1.2. OCSP-сервер отримує запит і перевіряє, чи:</p>
+<p><a name="n34"></a>
+повідомлення правильно сформоване;</p>
+<p><a name="n35"></a>
+запит містить всю необхідну для обробки інформацію.</p>
+<p><a name="n36"></a>
+Якщо будь-яка з перерахованих умов не виконується, то OCSP-сервер формує повідомлення про помилку.</p>
+<p><a name="n37"></a>
+Якщо запит сформовано вірно, OCSP-сервер повертає відповідь на запит з інформацією про статус сертифіката (далі - відповідь). Відповідь містить:</p>
+<p><a name="n38"></a>
+версію синтаксису відповіді;</p>
+<p><a name="n39"></a>
+ім’я OCSP-сервера;</p>
+<p><a name="n40"></a>
+відповідь для сертифіката в запиті;</p>
+<p><a name="n41"></a>
+необов’язкові розширення;</p>
+<p><a name="n42"></a>
+тип алгоритму підпису;</p>
+<p><a name="n43"></a>
+електронний цифровий підпис (далі - ЕЦП), що обчислений від геш-значення відповіді.</p>
+<p><a name="n44"></a>
+Відповідь для сертифіката в запиті складається з:</p>
+<p><a name="n45"></a>
+ідентифікатора необхідного сертифіката;</p>
+<p><a name="n46"></a>
+значення статусу сертифіката;</p>
+<p><a name="n47"></a>
+інтервалу часу дійсності відповіді;</p>
+<p><a name="n48"></a>
+необов’язкових розширень.</p>
+<p><a name="n49"></a>
+2.1.3. Після накладання OCSP-сервером ЕЦП на відповідь вона направляється користувачеві.</p>
+<p><a name="n50"></a>
+2.1.4. Отримавши відповідь, користувач має перевірити, що:</p>
+<p><a name="n51"></a>
+сертифікат, вказаний в отриманій відповіді, відповідає вказаному у відповідному запиті;</p>
+<p><a name="n52"></a>
+ЕЦП відповіді дійсний;</p>
+<p><a name="n53"></a>
+ім’я суб’єкта, що підписав відповідь, збігається з іменем OCSP-сервера, до якого був направлений запит;</p>
+<p><a name="n54"></a>
+сертифікат OCSP-сервера призначений для перевірки ЕЦП на OCSP-відповіді;</p>
+<p><a name="n55"></a>
+значення часу, на який відомо, що статус був правильний, є достатньо близьким до поточного часу. Доступний час, на який або до якого буде доступна нова інформація про статус сертифіката, повинен бути пізнішим, ніж час на даний момент.</p>
+<p><a name="n56"></a>
+III. Формати даних </p>
+<p><a name="n57"></a>
+3.1. Формат запиту та формат відповіді визначені на основі міжнародного стандарту RFC 2560.</p>
+<p><a name="n58"></a>
+3.2. Запит на інтерактивну перевірку статусу сертифіката представляється у вигляді повідомлення “OCSPRequest”:</p>
+<div><a name="n59"></a>
+<table width="100%" border=0 cellpadding=0 cellspacing=0 style="border-color: #000000;">
+<tr valign=top>
+<td width=31><br>
+</td>
+<td colspan=2 width=824>
+<p>OCSPRequest ::= SEQUENCE {</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=31><br>
+</td>
+<td width=252>
+<p>tbsRequest</p>
+</td>
+<td width=582>
+<p>TBSRequest,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=31><br>
+</td>
+<td width=252>
+<p>optionalSignature</p>
+</td>
+<td width=582>
+<p>[0] EXPLICIT Signature OPTIONAL}</p>
+</td>
+</tr>
+</table>
+</div>
+<p><a name="n60"></a>
+3.2.1. Поле “tbsRequest” містить безпосередньо дані запиту. Дані запиту містяться в типі “TBSRequest” та мають такий формат:</p>
+<div><a name="n61"></a>
+<table width="100%" border=0 cellpadding=0 cellspacing=0>
+<tr valign=top>
+<td width=31>
+<p><br></p>
+</td>
+<td colspan=2 width=824>
+<p>TBSRequest ::= SEQUENCE {</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=31>
+<p><br></p>
+</td>
+<td width=247>
+<p>version</p>
+</td>
+<td width=587>
+<p>[0] EXPLICIT Version DEFAULT v1,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=31>
+<p><br></p>
+</td>
+<td width=247>
+<p>requestorName</p>
+</td>
+<td width=587>
+<p>[1] EXPLICIT GeneralName OPTIONAL,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=31>
+<p><br></p>
+</td>
+<td width=247>
+<p>requestList</p>
+</td>
+<td width=587>
+<p>SEQUENCE OF Request,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=31>
+<p><br></p>
+</td>
+<td width=247>
+<p>requestExtensions</p>
+</td>
+<td width=587>
+<p>[2] EXPLICIT Extensions OPTIONAL}</p>
+</td>
+</tr>
+</table>
+</div>
+<p><a name="n62"></a>
+Поле “version” містить версію формату запиту.</p>
+<p><a name="n63"></a>
+Поле “requestorName” може містити ім’я користувача. Поле присутнє у випадку, якщо запит підписано, та відсутнє в іншому випадку.</p>
+<p><a name="n64"></a>
+Поле “requestList” містить інформацію про сертифікати, статус яких підлягає перевірці.</p>
+<p><a name="n65"></a>
+Тип “Request” містить ідентифікаційну інформацію про сертифікат, статус якого буде необхідно перевірити.</p>
+<div><a name="n66"></a>
+<table width="100%" border=0 cellpadding=0 cellspacing=0 style="border-color: #000000;">
+<tr valign=top>
+<td width=32><br>
+</td>
+<td colspan=2 width=823>
+<p>Request ::= SEQUENCE {</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=32><br>
+</td>
+<td width=245>
+<p>reqCert</p>
+</td>
+<td width=588>
+<p>CertID,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=32><br>
+</td>
+<td width=245>
+<p>singleRequestExtensions</p>
+</td>
+<td width=588>
+<p>[0] EXPLICIT Extensions OPTIONAL}</p>
+</td>
+</tr>
+</table>
+</div>
+<p><a name="n67"></a>
+Поле “reqCert” містить ідентифікаційну інформацію про сертифікат.</p>
+<p><a name="n68"></a>
+Поле “singleRequestExtensions” може містити додаткову інформацію про сертифікат, що перевіряється.</p>
+<div><a name="n69"></a>
+<table width="100%" border=0 cellpadding=0 cellspacing=0 style="border-color: #000000;">
+<tr valign=top>
+<td width=31>
+<p><br></p>
+</td>
+<td colspan=2 width=824>
+<p>CertID ::= SEQUENCE {</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=31>
+<p><br></p>
+</td>
+<td width=245>
+<p>hashAlgorithm</p>
+</td>
+<td width=589>
+<p>AlgorithmIdentifier,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=31>
+<p><br></p>
+</td>
+<td width=245>
+<p>issuerNameHash</p>
+</td>
+<td width=589>
+<p>OCTET STRING,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=31>
+<p><br></p>
+</td>
+<td width=245>
+<p>issuerKeyHash</p>
+</td>
+<td width=589>
+<p>OCTET STRING,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=31>
+<p><br></p>
+</td>
+<td width=245>
+<p>serialNumber</p>
+</td>
+<td width=589>
+<p>CertificateSerialNumber}</p>
+</td>
+</tr>
+</table>
+</div>
+<p><a name="n70"></a>
+Поле “algorithm” типу поля “hashAlgorithm” повинно мати значення, визначене у <a href="#n17">пункті 1.8 розділу І</a> цих Вимог.</p>
+<p><a name="n71"></a>
+Поле “issuerNameHash” містить геш-значення, що обчислюється від DER-кодування повного імені центру сертифікації ключів (далі - Центр) (поле “Subject” сертифіката Центру), що випустив сертифікат, статус якого перевіряється.</p>
+<p><a name="n72"></a>
+Поле “issuerKeyHash” містить геш-значення, що обчислюється від відкритого ключа Центру (поле “SubjectPublicKey” сертифіката Центру із вилученими байтами тегу та довжини), що випустив сертифікат, статус якого перевіряється.</p>
+<p><a name="n73"></a>
+Поле “serialNumber” містить серійний номер сертифіката, що перевіряється.</p>
+<p><a name="n74"></a>
+Поле “requestExtensions” може містити розширення з додатковою інформацією.</p>
+<p><a name="n75"></a>
+3.2.2. Поле “optionalSignature” є необов’язковим та може містити ЕЦП даних запиту.</p>
+<div><a name="n76"></a>
+<table width="100%" border=0 cellpadding=0 cellspacing=0 style="border-color: #000000;">
+<tr valign=top>
+<td width=31>
+<p><br></p>
+</td>
+<td colspan=2 width=824>
+<p>Signature ::= SEQUENCE {</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=31>
+<p><br></p>
+</td>
+<td width=242>
+<p>signatureAlgorithm</p>
+</td>
+<td width=592>
+<p>AlgorithmIdentifier,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=31>
+<p><br></p>
+</td>
+<td width=242>
+<p>signature</p>
+</td>
+<td width=592>
+<p>BIT STRING,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=31>
+<p><br></p>
+</td>
+<td width=242>
+<p>certs[0]</p>
+</td>
+<td width=592>
+<p>EXPLICIT SEQUENCE OF Certificate OPTIONAL}</p>
+</td>
+</tr>
+</table>
+</div>
+<p><a name="n77"></a>
+Поле “signatureAlgorithm” містить ідентифікатор алгоритму електронного цифрового підпису.</p>
+<p><a name="n78"></a>
+Поле “parameters” повинно бути відсутнє.</p>
+<p><a name="n79"></a>
+Поле “signature” містить безпосередньо байти ЕЦП.</p>
+<p><a name="n80"></a>
+Поле “certs” є необов’язковим та містить сертифікати, які можуть допомогти OCSP-серверу перевірити запит.</p>
+<p><a name="n81"></a>
+3.3. Відповідь на інтерактивну перевірку статусу сертифіката надається у вигляді повідомлення “OCSPResponse”:</p>
+<div><a name="n82"></a>
+<table width="100%" border=0 cellpadding=0 cellspacing=0 style="border-color: #000000;">
+<tr valign=top>
+<td width=31>
+<p><br></p>
+</td>
+<td colspan=2 width=824>
+<p>OCSPResponse ::= SEQUENCE {</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=31>
+<p><br></p>
+</td>
+<td width=241>
+<p>responseStatus</p>
+</td>
+<td width=593>
+<p>OCSPResponseStatus,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=31>
+<p><br></p>
+</td>
+<td width=241>
+<p>responseBytes</p>
+</td>
+<td width=593>
+<p>[0] EXPLICIT ResponseBytes OPTIONAL}</p>
+</td>
+</tr>
+</table>
+</div>
+<p><a name="n83"></a>
+3.3.1. Поле “responseStatus” містить інформацію про статус обробки запиту.</p>
+<p><a name="n84"></a>
+<a href="#n158">Опис числових значень поля “responseStatus”</a> наведено в додатку 2 до цих Вимог.</p>
+<p><a name="n85"></a>
+3.3.2. Поле “responseBytes” може містити інформацію про статус сертифіката. Це поле має бути обов’язково присутнє, якщо статус обробки запиту дорівнює нулю, та має бути відсутнім в інших випадках.</p>
+<p><a name="n86"></a>
+Тип “ResponseBytes” містить ідентифікатор типу даних та безпосередньо дані відповіді.</p>
+<div><a name="n87"></a>
+<table width="100%" border=0 cellpadding=0 cellspacing=0 style="border-color: #000000;">
+<tr valign=top>
+<td width=31>
+<p><br></p>
+</td>
+<td colspan=2 width=824>
+<p>ResponseBytes ::= SEQUENCE {</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=31>
+<p><br></p>
+</td>
+<td width=241>
+<p>responseType</p>
+</td>
+<td width=593>
+<p>OBJECT IDENTIFIER,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=31>
+<p><br></p>
+</td>
+<td width=241>
+<p>response</p>
+</td>
+<td width=593>
+<p>OCTET STRING}</p>
+</td>
+</tr>
+</table>
+</div>
+<p><a name="n88"></a>
+Поле “responseType” містить об’єктний ідентифікатор типу даних, що містяться в полі “response”.</p>
+<p><a name="n89"></a>
+Цими Вимогами визначається тип відповіді - “BasicOCSPResponse”.</p>
+<p><a name="n90"></a>
+Для типу даних “BasicOCSPResponse” поле “responseType” має об’єктний ідентифікатор id-pkix-ocsp-basic.</p>
+<p><a name="n91"></a>
+id-pkix-ocsp OBJECT IDENTIFIER ::= { iso(1) identified-organization(3) dod(6) internet(1) security(5) mechanisms(5) pkix(7) ad(48) ocsp(1) }</p>
+<p><a name="n92"></a>
+id-pkix-ocsp-basic OBJECT IDENTIFIER ::= {id-pkix-ocsp 1}</p>
+<p><a name="n93"></a>
+Тип “BasicOCSPResponse” має такий формат:</p>
+<div><a name="n94"></a>
+<table width="100%" border=0 cellpadding=0 cellspacing=0 style="border-color: #000000;">
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td colspan=2 width=825>
+<p>BasicOCSPResponse ::= SEQUENCE {</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td width=241>
+<p>tbsResponseData</p>
+</td>
+<td width=594>
+<p>ResponseData,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td width=241>
+<p>signatureAlgorithm</p>
+</td>
+<td width=594>
+<p>AlgorithmIdentifier,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td width=241>
+<p>signature</p>
+</td>
+<td width=594>
+<p>BIT STRING,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td width=241>
+<p>certs</p>
+</td>
+<td width=594>
+<p>[0] EXPLICIT SEQUENCE OF Certificate OPTIONAL}</p>
+</td>
+</tr>
+</table>
+</div>
+<p><a name="n95"></a>
+Поле “tbsResponseData” містить відповідь про стан сертифіката.</p>
+<p><a name="n96"></a>
+Тип “ResponseData” містить дані про стан сертифіката:</p>
+<div><a name="n97"></a>
+<table width="100%" border=0 cellpadding=0 cellspacing=0 style="border-color: #000000;">
+<tr valign=top>
+<td width=28>
+<p><br></p>
+</td>
+<td colspan=2 width=827>
+<p>ResponseData ::= SEQUENCE {</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=28>
+<p><br></p>
+</td>
+<td width=240>
+<p>version</p>
+</td>
+<td width=597>
+<p>[0] EXPLICIT Version DEFAULT v1,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=28>
+<p><br></p>
+</td>
+<td width=240>
+<p>responderID</p>
+</td>
+<td width=597>
+<p>ResponderID,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=28>
+<p><br></p>
+</td>
+<td width=240>
+<p>producedAt</p>
+</td>
+<td width=597>
+<p>GeneralizedTime,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=28>
+<p><br></p>
+</td>
+<td width=240>
+<p>responses</p>
+</td>
+<td width=597>
+<p>SEQUENCE OF SingleResponse,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=28>
+<p><br></p>
+</td>
+<td width=240>
+<p>responseExtensions</p>
+</td>
+<td width=597>
+<p>[1] EXPLICIT Extensions OPTIONAL}</p>
+</td>
+</tr>
+</table>
+</div>
+<p><a name="n98"></a>
+Поле “version” містить версію формату відповіді (дорівнює “1”).</p>
+<p><a name="n99"></a>
+Поле “responderID” містить ідентифікаційну інформацію про OCSP-сервер, що сформував відповідь.</p>
+<div><a name="n100"></a>
+<table width="100%" border=0 cellpadding=0 cellspacing=0 style="border-color: #000000;">
+<tr valign=top>
+<td width=28>
+<p><br></p>
+</td>
+<td colspan=2 width=827>
+<p>ResponderID ::= CHOICE {</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=28>
+<p><br></p>
+</td>
+<td width=242>
+<p>byName</p>
+</td>
+<td width=595>
+<p>[1] Name,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=28>
+<p><br></p>
+</td>
+<td width=242>
+<p>byKey</p>
+</td>
+<td width=595>
+<p>[2] KeyHash}</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=28>
+<p><br></p>
+</td>
+<td colspan=2 width=837>
+<p>KeyHash ::= OCTET STRING</p>
+</td>
+</tr>
+</table>
+</div>
+<p><a name="n101"></a>
+OCSP-сервер може бути ідентифікований за ім’ям (“byName”) або гешем ключа (“byKey”), що містить геш-значення, яке обчислюється від відкритого ключа OCSP-сервера.</p>
+<p><a name="n102"></a>
+У разі використання імені у полі “ResponderID” (“byName”) вказується повне ім’я OCSP-сервера (поле “Subject” сертифіката OCSP-сервера).</p>
+<p><a name="n103"></a>
+У разі використання гешу ключа у полі “ResponderID” (“byKey”) вказується геш-значення відкритого ключа OCSP-сервера (поля “SubjectPublicKey” його сертифіката із вилученими байтами тегу та довжини).</p>
+<p><a name="n104"></a>
+Поле “producedAt” містить час формування відповіді.</p>
+<p><a name="n105"></a>
+Поле “responses” містить набір відповідей про статус сертифікатів.</p>
+<div><a name="n106"></a>
+<table width="100%" border=0 cellpadding=0 cellspacing=0 style="border-color: #000000;">
+<tr valign=top>
+<td width=31>
+<p><br></p>
+</td>
+<td colspan=2 width=824>
+<p>SingleResponse ::= SEQUENCE {</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=31>
+<p><br></p>
+</td>
+<td width=240>
+<p>certID</p>
+</td>
+<td width=594>
+<p>CertID,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=31>
+<p><br></p>
+</td>
+<td width=240>
+<p>certStatus</p>
+</td>
+<td width=594>
+<p>CertStatus,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=31>
+<p><br></p>
+</td>
+<td width=240>
+<p>thisUpdate</p>
+</td>
+<td width=594>
+<p>GeneralizedTime,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=31>
+<p><br></p>
+</td>
+<td width=240>
+<p>nextUpdate</p>
+</td>
+<td width=594>
+<p>[0] EXPLICIT GeneralizedTime OPTIONAL,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=31>
+<p><br></p>
+</td>
+<td width=240>
+<p>singleExtensions</p>
+</td>
+<td width=594>
+<p>[1] EXPLICIT Extensions OPTIONAL}</p>
+</td>
+</tr>
+</table>
+</div>
+<p><a name="n107"></a>
+Поле “certID” містить ідентифікаційні дані сертифіката, статус якого перевіряється. Значення цього поля повинно відповідати значенню поля “certID” відповідного запиту.</p>
+<p><a name="n108"></a>
+Поле “certStatus” містить дані про статус сертифіката.</p>
+<div><a name="n109"></a>
+<table width="100%" border=0 cellpadding=0 cellspacing=0 style="border-color: #000000;">
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td colspan=2 width=825>
+<p>CertStatus ::= CHOICE {</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td width=243>
+<p>good</p>
+</td>
+<td width=592>
+<p>[0] IMPLICIT NULL,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td width=243>
+<p>revoked</p>
+</td>
+<td width=592>
+<p>[1] IMPLICIT RevokedInfo,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td width=243>
+<p>unknown</p>
+</td>
+<td width=592>
+<p>[2] IMPLICIT UnknownInfo}</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td colspan=2 width=825>
+<p>RevokedInfo ::= SEQUENCE {</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td width=243>
+<p>revocationTime</p>
+</td>
+<td width=592>
+<p>GeneralizedTime,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td width=243>
+<p>revocationReason</p>
+</td>
+<td width=592>
+<p>[0] EXPLICIT CRLReason OPTIONAL}</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td width=243>
+<p>UnknownInfo ::= NULL</p>
+</td>
+<td width=592>
+<p><br></p>
+</td>
+</tr>
+</table>
+</div>
+<p><a name="n110"></a>
+Поле “thisUpdate” містить час, на який було визначено статус сертифіката.</p>
+<p><a name="n111"></a>
+Поле “nextUpdate” є необов’язковим та може містити час наступного оновлення інформації про статус сертифіката.</p>
+<p><a name="n112"></a>
+Поле “singleExtensions” може містити додаткову інформацію про статус сертифіката.</p>
+<p><a name="n113"></a>
+Поле “responseExtensions” може містити додаткову інформацію про відповідь.</p>
+<p><a name="n114"></a>
+Поле “signatureAlgorithm” містить алгоритм ЕЦП.</p>
+<p><a name="n115"></a>
+У разі відсутності підпису у запиті відповідь повинна формуватися з використанням алгоритму ДСТУ 4145-2002 “Інформаційна технологія. Криптографічний захист інформації. Електронний цифровий підпис, що ґрунтується на еліптичних кривих”, затвердженого наказом Державного комітету України з питань технічного регулювання та споживчої політики від 28 грудня 2002 року № 31 (далі - ДСТУ 4145-2002 (ПБ)), як алгоритму “за умовчанням”.</p>
+<p><a name="n116"></a>
+При формуванні відповіді повинен використовуватися той алгоритм ЕЦП, який було використано при формуванні запиту.</p>
+<p><a name="n117"></a>
+Якщо сервер не підтримує алгоритм ЕЦП, використаний у запиті, то OCSP-сервер може повернути помилку “malformedRequest” (пошкоджений або недозволений запит) або сформувати відповідь з використанням алгоритму згідно з ДСТУ 4145-2002 (ПБ).</p>
+<p><a name="n118"></a>
+Поле “signature” містить значення ЕЦП.</p>
+<p><a name="n119"></a>
+Поле “certs” є необов'язковим та може містити набір сертифікатів для перевірки ЕЦП відповіді.</p>
+<p><a name="n120"></a>
+3.4. Розширення, які можуть бути використані як користувачем, так і OCSP-сервером, не повинні бути критичними.</p>
+<p><a name="n121"></a>
+3.4.1. Маркер - спеціальна мітка, яку користувач може додати до запиту, щоб запобігти атакам дублювання запитів. Для кожного запиту маркер повинен бути унікальним; OCSP-сервер у свою відповідь повинен включити такий самий маркер.</p>
+<p><a name="n122"></a>
+Розширення із маркером визначається таким об’єктним ідентифікатором:</p>
+<p><a name="n123"></a>
+id-pkix-ocsp-nonce OBJECT IDENTIFIER ::= { id-pkix-ocsp 2 }</p>
+<p><a name="n124"></a>
+Значення маркера вказується безпосередньо у полі “extnValue” розширення без попереднього DER-кодування.</p>
+<p><a name="n125"></a>
+3.4.2. Користувач може зазначити у запиті, які можливі типи відповідей він може обробити. Перелік допустимих типів визначається розширенням “AcceptableResponses”:</p>
+<p><a name="n126"></a>
+id-pkix-ocsp-responce OBJECT IDENTIFIER ::= { id-pkix-ocsp 4 }</p>
+<p><a name="n127"></a>
+AcceptableResponses ::= SEQUENCE OF OBJECT IDENTIFIER</p>
+<p><a name="n128"></a>
+Це розширення може використовуватись тоді, коли OCSP-сервер підтримує декілька типів відповідей. Коли таке розширення відсутнє, сервер повинен повертати відповідь “BasicOCSPResponse”.</p>
+<p><a name="n129"></a>
+3.4.3. Під час посилання на список відкликаних сертифікатів OCSP-сервер може включити у “singleExtensions” посилання на список відкликаних сертифікатів, з якого був одержаний статус вказаного сертифіката. Це може бути зручно для організації робіт між різними Центрами та проведення аудиту. Для цього використовується розширення “CrlID”:</p>
+<div><a name="n130"></a>
+<table width="100%" border=0 cellpadding=0 cellspacing=0 style="border-color: #000000;">
+<tr valign=top>
+<td width=33>
+<p><br></p>
+</td>
+<td width=231>
+<p>id-pkix-ocsp-crl</p>
+</td>
+<td width=601>
+<p>OBJECT IDENTIFIER ::= { id-pkix-ocsp 3 }</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=33>
+<p><br></p>
+</td>
+<td colspan=2 width=822>
+<p>CrlID ::= SEQUENCE {</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=33>
+<p><br></p>
+</td>
+<td width=231>
+<p>crlUrl</p>
+</td>
+<td width=601>
+<p>[0] EXPLICIT IA5String OPTIONAL,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=33>
+<p><br></p>
+</td>
+<td width=231>
+<p>crlNum</p>
+</td>
+<td width=601>
+<p>[1] EXPLICIT INTEGER OPTIONAL,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=33>
+<p><br></p>
+</td>
+<td width=231>
+<p>crlTime</p>
+</td>
+<td width=601>
+<p>[2] EXPLICIT GeneralizedTime OPTIONAL }</p>
+</td>
+</tr>
+</table>
+</div>
+<p><a name="n131"></a>
+Список відкликаних сертифікатів може бути зазначений через URL, за яким його можна одержати, через його номер та/або через дату його публікації.</p>
+<p><a name="n132"></a>
+3.4.4. OCSP-сервер може включити у “singleExtensions” будь-яке розширення, що міститься у відповідному елементі списку відкликаних сертифікатів.</p>
+<p><a name="n133"></a>
+3.5. Сертифікат OCSP-сервера повинен містити розширення “Уточнене призначення відкритого ключа” (“extendedKeyUsage”), в якому повинен бути зазначений лише один об’єктний ідентифікатор id-kp-OCSPSigning(id-kp 9).</p>
+<p><a name="n134"></a>
+Зазначене розширення повинно бути критичним.</p>
+<p><a name="n135"></a>
+Сертифікат OCSP-сервера повинен бути сформований безпосередньо тим Центром, що сформував сертифікат, статус якого перевіряється.</p>
+<p><a name="n136"></a>
+IV. Транспортні протоколи </p>
+<p><a name="n137"></a>
+4.1. Для передачі запиту на формування статусу сертифіката та отримання відповіді повинен застосовуватися транспортний протокол НТТP. У разі використання інших транспортних протоколів формати повідомлень цими Вимогами не регламентуються.</p>
+<p><a name="n138"></a>
+4.2. Передача запиту на перевірку статусу сертифіката із застосуванням транспортного протоколу HTTP відбувається за допомогою методу GET або POST протоколу HTTP.</p>
+<p><a name="n139"></a>
+4.2.1. Тип контента запиту формується таким чином:</p>
+<p><a name="n140"></a>
+Content-Type: application/ocsp-request</p>
+<p><a name="n141"></a>
+Тіло повідомлення запиту повинно містити байти DER-кодування структури “OCSPRequest”.</p>
+<p><a name="n142"></a>
+Тип кодування контента запиту формується таким чином:</p>
+<p><a name="n143"></a>
+Content-Transfer-Encoding: binary</p>
+<p><a name="n144"></a>
+Блоки даних передаються як байти їх DER-кодування.</p>
+<p><a name="n145"></a>
+4.2.2. Тип контента відповіді формується таким чином:</p>
+<p><a name="n146"></a>
+Content-Type: application/ocsp-response</p>
+<p><a name="n147"></a>
+Тіло повідомлення відповіді повинно містити байти DER-кодування структури “OCSPResponse”.</p>
+<p><a name="n148"></a>
+Тип кодування контента відповіді формується таким чином:</p>
+<p><a name="n149"></a>
+Content-Transfer-Encoding: binary</p>
+<p><a name="n150"></a>
+Блоки даних передаються як байти їх DER-кодування.</p>
+<div><a name="n151"></a>
+<table width="100%" border=0 cellpadding=0 cellspacing=0>
+<tr valign=top>
+<td width="42%">
+<p> Директор Департаменту
+<br> нотаріату, банкрутства
+<br> та функціонування
+<br> центрального засвідчувального
+<br> органу Міністерства
+<br> юстиції України </p>
+</td>
+<td width="70%">
+<p><br><br><br><br><br> К.І. Чижмарь </p>
+</td>
+</tr>
+</table>
+</div>
+<div><a name="n152"></a>
+<table width="100%" border=0 cellpadding=0 cellspacing=0>
+<tr valign=top>
+<td width="42%">
+<p> Директор Департаменту
+<br> криптографічного захисту
+<br> інформації Адміністрації
+<br> Державної служби спеціального
+<br> зв’язку та захисту
+<br> інформації України </p>
+</td>
+<td width="70%">
+<p><br><br><br><br><br> А.І. Пушкарьов </p>
+</td>
+</tr>
+</table>
+</div>
+<p> <a name="n161"></a>
+<br> </p>
+<p><a name="n160"></a>
+<br> </p>
+<div><a name="n153"></a>
+<table width="100%" border=0 cellpadding=0 cellspacing=0>
+<tr valign=top>
+<td width="45%">
+<p><br></p>
+</td>
+<td width="40%">
+<p>Додаток 1
+<br>до Вимог до протоколу
+<br>визначення статусу сертифіката</p>
+</td>
+</tr>
+</table>
+</div>
+<p><a name="n154"></a>
+ФОРМАТИ
+<br> даних у нотації ASN.1, що застосовуються при реалізації протоколу визначення статусу сертифіката </p>
+<p><a name="n155"></a>
+id-pkix-ocsp-basic OBJECT IDENTIFIER ::= { iso(1) identified-organization(3) dod(6) internet(1) security(5) mechanisms(5) pkix(7) ad(48) ocsp(1) id-pkix-ocsp-basic(1) }</p>
+<div><a name="n156"></a>
+<table width="100%" border=0 cellpadding=0 cellspacing=0 style="border-color: #000000;">
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td colspan=2 width=825>
+<p>OCSPRequest ::= SEQUENCE {</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td width=316>
+<p>tbsRequest</p>
+</td>
+<td width=519>
+<p>TBSRequest,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td width=316>
+<p>optionalSignature</p>
+</td>
+<td width=519>
+<p>[0] EXPLICIT Signature OPTIONAL}</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td colspan=2 width=825>
+<p>Signature ::= SEQUENCE {</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td width=316>
+<p>signatureAlgorithm</p>
+</td>
+<td width=519>
+<p>AlgorithmIdentifier,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td width=316>
+<p>signature</p>
+</td>
+<td width=519>
+<p>BIT STRING}</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td colspan=2 width=825>
+<p>TBSRequest ::= SEQUENCE {</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td width=316>
+<p>version</p>
+</td>
+<td width=519>
+<p>[0] EXPLICIT Version DEFAULT v1,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td width=316>
+<p>requestorName</p>
+</td>
+<td width=519>
+<p>[1] EXPLICIT GeneralName OPTIONAL,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td width=316>
+<p>requestList</p>
+</td>
+<td width=519>
+<p>SEQUENCE OF Request,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td width=316>
+<p>requestExtensions</p>
+</td>
+<td width=519>
+<p>[2] EXPLICIT Extensions OPTIONAL}</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td colspan=2 width=825>
+<p>Request ::= SEQUENCE {</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td width=316>
+<p>reqCert</p>
+</td>
+<td width=519>
+<p>CertID,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td width=316>
+<p>singleRequestExtensions</p>
+</td>
+<td width=519>
+<p>[0] EXPLICIT Extensions OPTIONAL}</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td colspan=2 width=825>
+<p>CertID ::= SEQUENCE {</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td width=316>
+<p>hashAlgorithm</p>
+</td>
+<td width=519>
+<p>AlgorithmIdentifier,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td width=316>
+<p>issuerNameHash</p>
+</td>
+<td width=519>
+<p>OCTET STRING,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td width=316>
+<p>issuerKeyHash</p>
+</td>
+<td width=519>
+<p>OCTET STRING,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td width=316>
+<p>serialNumber</p>
+</td>
+<td width=519>
+<p>CertificateSerialNumber}</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td colspan=2 width=825>
+<p>OCSPResponse ::= SEQUENCE {</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td width=316>
+<p>responseStatus</p>
+</td>
+<td width=519>
+<p>OCSPResponseStatus,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td width=316>
+<p>responseBytes</p>
+</td>
+<td width=519>
+<p>[0] EXPLICIT ResponseBytes OPTIONAL}</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td colspan=2 width=825>
+<p>OCSPResponseStatus ::= ENUMERATED {</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td width=316>
+<p>successful</p>
+</td>
+<td width=519>
+<p>(0),</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td width=316>
+<p>malformedRequest</p>
+</td>
+<td width=519>
+<p>(1),</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td width=316>
+<p>internalError</p>
+</td>
+<td width=519>
+<p>(2),</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td width=316>
+<p>tryLater</p>
+</td>
+<td width=519>
+<p>(3),</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td width=316>
+<p>sigRequired</p>
+</td>
+<td width=519>
+<p>(5),</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td width=316>
+<p>unauthorized</p>
+</td>
+<td width=519>
+<p>(6)}</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td colspan=2 width=825>
+<p>ResponseBytes ::= SEQUENCE {</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td width=316>
+<p>responseType</p>
+</td>
+<td width=519>
+<p>OBJECT IDENTIFIER,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td width=316>
+<p>response</p>
+</td>
+<td width=519>
+<p>OCTET STRING}</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td colspan=2 width=825>
+<p>BasicOCSPResponse ::= SEQUENCE {</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td width=316>
+<p>tbsResponseData</p>
+</td>
+<td width=519>
+<p>ResponseData,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td width=316>
+<p>signatureAlgorithm</p>
+</td>
+<td width=519>
+<p>AlgorithmIdentifier,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td width=316>
+<p>signature</p>
+</td>
+<td width=519>
+<p>BIT STRING,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td width=316>
+<p>certs</p>
+</td>
+<td width=519>
+<p>[0] EXPLICIT SEQUENCE OF Certificate OPTIONAL}</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td colspan=2 width=825>
+<p>ResponseData ::= SEQUENCE {</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td width=316>
+<p>version</p>
+</td>
+<td width=519>
+<p>[0] EXPLICIT Version DEFAULT v1,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td width=316>
+<p>responderID</p>
+</td>
+<td width=519>
+<p>ResponderID,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td width=316>
+<p>producedAt</p>
+</td>
+<td width=519>
+<p>GeneralizedTime,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td width=316>
+<p>responses</p>
+</td>
+<td width=519>
+<p>SEQUENCE OF SingleResponse,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td width=316>
+<p>responseExtensions</p>
+</td>
+<td width=519>
+<p>[1] EXPLICIT Extensions OPTIONAL}</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td colspan=2 width=825>
+<p>ResponderID ::= CHOICE {</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td width=316>
+<p>byName</p>
+</td>
+<td width=519>
+<p>[1] Name,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td width=316>
+<p>byKeyHash</p>
+</td>
+<td width=519>
+<p>[2] KeyHash }</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td colspan=2 width=825>
+<p>SingleResponse ::= SEQUENCE {</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td width=316>
+<p>certID</p>
+</td>
+<td width=519>
+<p>CertID,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td width=316>
+<p>certStatus</p>
+</td>
+<td width=519>
+<p>CertStatus,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td width=316>
+<p>thisUpdate</p>
+</td>
+<td width=519>
+<p>GeneralizedTime,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td width=316>
+<p>nextUpdate</p>
+</td>
+<td width=519>
+<p>[0] EXPLICIT GeneralizedTime OPTIONAL,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td width=316>
+<p>singleExtensions</p>
+</td>
+<td width=519>
+<p>[1] EXPLICIT Extensions OPTIONAL}</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td colspan=2 width=825>
+<p>CertStatus ::= CHOICE {</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td width=316>
+<p>good</p>
+</td>
+<td width=519>
+<p>[0] IMPLICIT NULL,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td width=316>
+<p>revoked</p>
+</td>
+<td width=519>
+<p>[1] IMPLICIT RevokedInfo,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td width=316>
+<p>unknown</p>
+</td>
+<td width=519>
+<p>[2] IMPLICIT UnknownInfo}</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td colspan=2 width=825>
+<p>RevokedInfo ::= SEQUENCE {</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td width=316>
+<p>revocationTime</p>
+</td>
+<td width=519>
+<p>GeneralizedTime,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td width=316>
+<p>revocationReason</p>
+</td>
+<td width=519>
+<p>[0] EXPLICIT CRLReason OPTIONAL}</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30>
+<p><br></p>
+</td>
+<td width=316>
+<p>UnknownInfo ::= NULL</p>
+</td>
+<td width=519>
+<p><br></p>
+</td>
+</tr>
+</table>
+</div>
+<p> <a name="n163"></a>
+<br> </p>
+<p><a name="n162"></a>
+<br> </p>
+<div><a name="n157"></a>
+<table width="100%" border=0 cellpadding=0 cellspacing=0>
+<tr valign=top>
+<td width="45%">
+<p><br></p>
+</td>
+<td width="40%">
+<p>Додаток 2
+<br>до Вимог до протоколу
+<br>визначення статусу сертифіката</p>
+</td>
+</tr>
+</table>
+</div>
+<p><a name="n158"></a>
+ОПИС
+<br> числових значень поля “responseStatus” </p>
+<div><a name="n159"></a>
+<table width="100%" cellpadding="1" style="border-collapse: collapse;">
+<tr valign=top>
+<td width=143 valign=middle style="border: 1px solid #000000">
+<p>Константа</p>
+</td>
+<td width=100 valign=middle style="border: 1px solid #000000">
+<p>Числове значення</p>
+</td>
+<td width=390 valign=middle style="border: 1px solid #000000">
+<p>Опис</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=143 valign=middle style="border: 1px solid #000000">
+<p>successful</p>
+</td>
+<td width=100 valign=middle style="border: 1px solid #000000">
+<p>0</p>
+</td>
+<td width=390 valign=middle style="border: 1px solid #000000">
+<p>Операція завершилась успішно</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=143 valign=middle style="border: 1px solid #000000">
+<p>malformedRequest</p>
+</td>
+<td width=100 valign=middle style="border: 1px solid #000000">
+<p>1</p>
+</td>
+<td width=390 valign=middle style="border: 1px solid #000000">
+<p>Пошкоджений або недозволений запит</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=143 valign=middle style="border: 1px solid #000000">
+<p>internalError</p>
+</td>
+<td width=100 valign=middle style="border: 1px solid #000000">
+<p>2</p>
+</td>
+<td width=390 valign=middle style="border: 1px solid #000000">
+<p>Внутрішня помилка</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=143 valign=middle style="border: 1px solid #000000">
+<p>tryLater</p>
+</td>
+<td width=100 valign=middle style="border: 1px solid #000000">
+<p>3</p>
+</td>
+<td width=390 valign=middle style="border: 1px solid #000000">
+<p>Запит неможливо обробити у зв’язку із перенавантаженням</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=143 valign=middle style="border: 1px solid #000000">
+<p>sigRequired</p>
+</td>
+<td width=100 valign=middle style="border: 1px solid #000000">
+<p>5</p>
+</td>
+<td width=390 valign=middle style="border: 1px solid #000000">
+<p>OCSP-cервер обробляє лише підписані запити</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=143 valign=middle style="border: 1px solid #000000">
+<p>unauthorized</p>
+</td>
+<td width=100 valign=middle style="border: 1px solid #000000">
+<p>6</p>
+</td>
+<td width=390 valign=middle style="border: 1px solid #000000">
+<p>Запит від неавторизованого користувача</p>
+</td>
+</tr>
+</table>
+</div>
+<p><a name="n165"></a>
+<br></p>
+</div>
+<hr>
+<div align=right>&copy; <a href="https://data.rada.gov.ua">Офіційний вебпортал парламенту України<br />https://www.rada.gov.ua/</a></div>
+</body></html>

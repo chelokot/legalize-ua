@@ -1,0 +1,2737 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="robots" content="noarchive">
+<meta name="googlebot" content="noarchive">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" href="https://zakonst.rada.gov.ua/images/mobi-styles.css" media="screen" />
+
+<meta name="Description" content="Мін'юст України; Наказ, Вимоги від 11.11.2014 № 1886/5 (Редакція станом на 11.11.2014)">
+<meta name="Created" content="Tue, 11 Nov 2014 15:26:00 GMT">
+<meta name="DocumentDate" content="Tue, 11 Nov 2014 15:26:00 GMT">
+<meta name="Last-Modified" content="Wed, 21 May 2025 14:00:09 GMT">
+<meta name="Dates" content="11.11.2014">
+<meta name="Numbers" content="1886/5">
+<meta name="Types" content="Наказ, Вимоги">
+<meta name="Organs" content="Мін'юст України">
+<meta name="Stan" content="Чинний">
+<meta name="Nreg" content="z1427-14">
+<title>Вимоги до структури та змісту XML-схеми електронного примірника описів справ постійного зберігання</title>
+</head><body>
+<h2>Мін'юст України; Наказ, Вимоги від 11.11.2014 № 1886/5</h2>
+<h1>Вимоги до структури та змісту XML-схеми електронного примірника описів справ постійного зберігання</h1>
+<h3>Реєстрація: Мін'юст України від 11.11.2014 № 1427/26204</h3><h4>Стан: Чинний</h4>
+<h5>Ідентифікатор: z1427-14</h5>
+<hr>
+<h3>Текст документа від 11.11.2014:</h3>
+<div id=article>
+<div><a name="n2"></a>
+<table width="100%" border=0 cellpadding=0 cellspacing=0>
+<tr valign=top>
+<td width="60%">
+<p> <br> </p>
+</td>
+<td width="40%">
+<p> ЗАТВЕРДЖЕНО
+<br> Наказ Міністерства
+<br> юстиції України
+<br><a href="/go/z1421-14">11.11.2014 № 1886/5</a></p>
+</td>
+</tr>
+</table>
+</div>
+<div><a name="n3"></a>
+<table width="100%" border=0 cellpadding=0 cellspacing=0>
+<tr valign=top>
+<td width="60%">
+<p> <br> </p>
+</td>
+<td width="40%">
+<p> Зареєстровано в Міністерстві
+<br> юстиції України
+<br> 11 листопада 2014 р.
+<br> за № 1427/26204 </p>
+</td>
+</tr>
+</table>
+</div>
+<p><a name="n4"></a>
+ВИМОГИ
+<br> до структури та змісту XML-схеми електронного примірника описів справ постійного зберігання </p>
+<p><a name="n5"></a>
+Позначення кратності вкладень компонентів XML-схеми:</p>
+<p><a name="n6"></a>
+1 - обов’язковий, може з’являтися тільки один раз; </p>
+<p><a name="n7"></a>
+1-n - обов’язковий, може зустрічатися кілька разів;</p>
+<p><a name="n8"></a>
+0-1 - необов’язковий, може зустрічатися тільки один раз;</p>
+<p><a name="n9"></a>
+0-n - необов’язковий, може зустрічатися кілька разів.</p>
+<p><a name="n10"></a>
+Скорочення:</p>
+<p><a name="n11"></a>
+А - атрибут;</p>
+<p><a name="n12"></a>
+ЄДРПОУ - Єдиний державний реєстр підприємств та організацій України;</p>
+<p><a name="n13"></a>
+Е - елемент;</p>
+<p><a name="n14"></a>
+К - компонент;</p>
+<p><a name="n15"></a>
+С - контейнер;</p>
+<p><a name="n16"></a>
+ЕПОС - електронний примірник описів справ постійного зберігання;</p>
+<p><a name="n17"></a>
+ІД - інструкція з діловодства установи.</p>
+<div><a name="n18"></a>
+<table width="100%" cellpadding="1" style="border-collapse: collapse;">
+<tr valign=top>
+<td rowspan=2 width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Індекс компонента XML-схеми </p>
+</td>
+<td rowspan=2 width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Тип компонента XML-схеми </p>
+</td>
+<td colspan=5 width=475 valign=middle style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Назви і рівень вкладеності XML-контейнерів/XML-елементів </p>
+</td>
+<td rowspan=2 width=105 valign=middle style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Назва XML-атрибута </p>
+</td>
+<td rowspan=2 width=56 valign=middle style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Кратність компонентів XML-схеми </p>
+</td>
+<td rowspan=2 width=127 valign=middle style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Призначеність/зміст компонентів XML-схеми </p>
+</td>
+<td rowspan=2 width=70 valign=middle style="border: 1px solid #000000">
+<p> Правило заповнення змісту </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=97 valign=middle style="border-width : 1px; border-color: #000000; border-right: none; border-bottom: none;">
+<p> нульовий (кореневий) рівень </p>
+</td>
+<td width=68 valign=middle style="border-width : 1px; border-color: #000000; border-right: none; border-bottom: none;">
+<p> перший рівень </p>
+</td>
+<td width=95 valign=middle style="border-width : 1px; border-color: #000000; border-right: none; border-bottom: none;">
+<p> другий рівень </p>
+</td>
+<td width=106 valign=middle style="border-width : 1px; border-color: #000000; border-right: none; border-bottom: none;">
+<p> третій рівень </p>
+</td>
+<td width=77 valign=middle style="border-width : 1px; border-color: #000000; border-right: none; border-bottom: none;">
+<p> четвертий рівень </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 1 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 2 </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 3 </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 4 </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 5 </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 6 </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 7 </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 8 </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 9 </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 10 </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> 11 </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К1 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> С </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> epos </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 1 </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Для ЕПОС </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> XML </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К2 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> С </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> md.file </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 1 </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Для метаданих ЕПОС </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> XML </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К3 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> С </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> identificat </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Для даних ідентифікації файла ЕПОС </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> XML </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К4 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> А </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> date.creat </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 1 </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Дата створення файла </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> ІД </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К5 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Е </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> organisat </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 1 </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Для реквізитів установи </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> XML </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К6 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> А </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> fullname </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 1 </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Назва установи </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> ІД </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К7 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> А </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> shortname </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 0 </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Коротка назва установи </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> ІД </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К8 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> А </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> ownership </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 0 </p>
+</td>
+<td width=127 valign=middle style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Абревіатура, що відображає організаційно-правову форму </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> ІД </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К9 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> А </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> org.code </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 0 </p>
+</td>
+<td width=127 valign=middle style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Ідентифікаційний код установи за ЄДРПОУ </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> ІД </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К10 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> А </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> tax.idcode </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 0 </p>
+</td>
+<td width=127 valign=middle style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Ідентифікаційний номер платника податків </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> ІД </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К11 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Е </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> address </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 1 </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Для адреси установи </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> XML </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К12 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> А </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> street </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 1 </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Назва вулиці </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> ІД </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К13 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> А </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> house </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 1 </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Номер будинку </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> ІД </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К14 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> А </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> building </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 1 </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Номер корпусу або будови </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> ІД </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К15 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> А </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> flat </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 1 </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Номер офіса або квартири </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> ІД </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К16 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> А </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> settlement </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 1 </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Назва населеного пункту (міста, селища тощо) </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> ІД </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К17 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> А </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> district </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 1 </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Назва району </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> ІД </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К18 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> А </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> region </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 1 </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Назва регіону (республіки, області) </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> ІД </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К19 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> А </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> postсode </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 1 </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Поштовий індекс </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> ІД </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К20 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> A </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> postbox </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 0 </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Номер абонентської скриньки </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> ІД </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К21 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> А </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> nontypical </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 0 </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Інші елементи поштової адреси </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> ІД </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К22 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> А </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> e.contасt </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 1-n </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Номер (адреса) із зазначенням типу електронних засобів комунікації </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> ІД </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К23 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Е </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> respons.person </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 1 </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Для даних про службову особу, котра створила і підписала ЕПОС </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> XML </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К24 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> А </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> department </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 1 </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Назва підрозділу установи </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> ІД </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К25 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> A </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> rank </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 1 </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Посада </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> ІД </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К26 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> А </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> surname </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 1 </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Прізвище </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> ІД </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К27 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> А </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> firstname </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 1 </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Ім’я </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> ІД </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К28 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> А </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> fathername </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 1 </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> По батькові </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> ІД </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К29 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> А </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> e.contact </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 1-n </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Номер (адреса) із зазначенням типу електронних засобів комунікації </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> ІД </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К30 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> С </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> md.ops </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 1 </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Для метаданих ОпС </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> XML </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К31 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> C </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> organisation </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 1 </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Для даних ідентифікації установи-фондоутворювача </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> XML </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К32 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> А </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> fullname </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 1 </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Найменування установи </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> ПР </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К33 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> А </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> shortname </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 0 </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Коротке найменування установи </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> ПР </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К34 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> А </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> org.code </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 1 </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Ідентифікацій-ний код установи за ЄДРПОУ </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> ПР </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К35 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> А </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> department </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 1 </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Назва підрозділу установи </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> ПР </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К36 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Е </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> official.person </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Для даних про керівника установи </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> XML </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К37 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> A </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> rank </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 1 </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Посада </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> ІД </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К38 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> А </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> surname </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 1 </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Прізвище </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> ІД </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К39 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> А </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> firstname </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 1 </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Ім’я </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> ІД </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К40 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> А </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> fathername </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 1 </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> По батькові </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> ІД </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К41 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> E </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> respons.person </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Для даних про укладача опису </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> XML </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К42 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> А </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> department </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 1 </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Назва підрозділу установи </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> ІД </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К43 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> A </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> rank </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 1 </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Посада </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> ІД </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К44 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> А </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> surname </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 1 </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Прізвище </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> ІД </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К45 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> А </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> firstname </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 1 </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Ім’я </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> ІД </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К46 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> А </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> fathername </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 1 </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> По батькові </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> ІД </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К47 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Е </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> epk.org </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 1 </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Для даних протоколу ЕПК установи </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> XML </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К48 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> А </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> protokl.numb </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Номер протоколу </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> ІД </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К49 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> А </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> protocol.date </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Дата протоколу </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> ІД </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К50 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> E </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> state.archive </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Для даних ідентифікації державної архівної установи </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> XML </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К51 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> А </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> fullname </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 1 </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Назва архіву </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> ПР </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К52 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> А </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> shortname </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 0 </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Коротка назва архіву </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> ПР </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К53 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> A </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> org.code </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 1 </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Ідентифікацій-ний код архіву за ЄДРПОУ </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> ПР </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К54 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Е </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> official.person </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Для даних про керівника установи </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> XML </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К55 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> A </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> rank </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 1 </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Посада </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> ІД </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К56 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> А </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> surname </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 1 </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Прізвище </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> ІД </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К57 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> А </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> firstname </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 1 </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Ім’я </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> ІД </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К58 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> А </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> fathername </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 1 </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> По батькові </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> ІД </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К59 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> E </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> respons.person </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Для даних про укладача опису </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> XML </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К60 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> А </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> department </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 1 </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Назва підрозділу установи </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> ІД </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К61 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> A </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> rank </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 1 </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Посада </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> ІД </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К62 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> А </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> surname </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 1 </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Прізвище </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> ІД </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К63 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> А </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> firstname </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 1 </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Ім’я </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> ІД </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К64 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> А </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> fathername </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 1 </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> По батькові </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> ІД </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К65 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Е </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> epk.archive </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 1 </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Для даних протоколу ЕПК архіву </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> XML </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К66 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> А </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> protokl.numb </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Номер протоколу </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> ІД </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К67 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> А </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> protocol.date </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Дата протоколу </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> ІД </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К68 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> C </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> resource.identif </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 1 </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Для описів справ </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> XML </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К69 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> А </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> fund.number </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 1 </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Номер фонду </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> ПР </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К70 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> А </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> descript.number </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 1 </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Номер опису </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> ПР </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К71 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Е </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> records </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 1 </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Для ЕПОС </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> XML </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К72 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> A </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> record </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 1 </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Для ЕПОС </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> XML (Base 64) </p>
+</td>
+</tr>
+<tr valign=top>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> К73 </p>
+</td>
+<td width=62 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> А </p>
+</td>
+<td width=97 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=68 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=95 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=106 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=77 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> <br> </p>
+</td>
+<td width=105 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> record.changes </p>
+</td>
+<td width=56 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> 0-n </p>
+</td>
+<td width=127 valign=top style="border-width : 1px; border-color: #000000; border-right: none;">
+<p> Для ЕПОС з внесеними змінами </p>
+</td>
+<td width=70 valign=top style="border: 1px solid #000000">
+<p> XML (Base 64) </p>
+</td>
+</tr>
+</table>
+</div>
+<div><a name="n19"></a>
+<table width="100%" border=0 cellpadding=0 cellspacing=0>
+<tr valign=top>
+<td width="55%" height=28>
+<p> Заступник директора
+<br> Департаменту взаємодії
+<br> з органами влади </p>
+</td>
+<td width="45%" height=28>
+<p><br><br> С.В. Мартиненко </p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<hr>
+<div align=right>&copy; <a href="https://data.rada.gov.ua">Офіційний вебпортал парламенту України<br />https://www.rada.gov.ua/</a></div>
+</body></html>

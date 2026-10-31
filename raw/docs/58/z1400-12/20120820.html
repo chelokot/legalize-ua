@@ -1,0 +1,986 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="robots" content="noarchive">
+<meta name="googlebot" content="noarchive">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" href="https://zakonst.rada.gov.ua/images/mobi-styles.css" media="screen" />
+
+<meta name="Description" content="Мін'юст України, Адміністрація Держспецзв’язку; Наказ, Вимоги від 20.08.2012 № 1236/5/453 (Редакція станом на 20.08.2012)">
+<meta name="Created" content="Mon, 20 Aug 2012 14:21:00 GMT">
+<meta name="DocumentDate" content="Mon, 20 Aug 2012 14:21:00 GMT">
+<meta name="Last-Modified" content="Thu, 12 Nov 2020 14:40:08 GMT">
+<meta name="Dates" content="20.08.2012">
+<meta name="Numbers" content="1236/5/453">
+<meta name="Types" content="Наказ, Вимоги">
+<meta name="Organs" content="Мін'юст України, Адміністрація Держспецзв’язку">
+<meta name="Stan" content="Втратив чинність">
+<meta name="Nreg" content="z1400-12">
+<title>Вимоги до формату списку відкликаних сертифікатів</title>
+</head><body>
+<h2>Мін'юст України, Адміністрація Держспецзв’язку; Наказ, Вимоги від 20.08.2012 № 1236/5/453</h2>
+<h1>Вимоги до формату списку відкликаних сертифікатів</h1>
+<h3>Реєстрація: Мін'юст України від 20.08.2012 № 1400/21712</h3><h4>Стан: Втратив чинність</h4>
+<h5>Ідентифікатор: z1400-12</h5>
+<hr>
+<h3>Текст документа від 20.08.2012:</h3>
+<div id=article>
+<div><a name="n2"></a>
+<table width="100%" border=0 cellpadding=0 cellspacing=0>
+<tr valign=top>
+<td width="60%">
+<p> <br> </p>
+</td>
+<td width="40%">
+<p> ЗАТВЕРДЖЕНО
+<br> Наказ Міністерства
+<br> юстиції України,
+<br> Адміністрації Державної
+<br> служби спеціального зв’язку
+<br> та захисту інформації України
+<br><a href="/go/z1398-12">20.08.2012&nbsp; № 1236/5/453</a></p>
+</td>
+</tr>
+</table>
+</div>
+<div><a name="n3"></a>
+<table width="100%" border=0 cellpadding=0 cellspacing=0>
+<tr valign=top>
+<td width="60%">
+<p> <br> </p>
+</td>
+<td width="40%">
+<p> Зареєстровано в Міністерстві
+<br> юстиції України
+<br> 20 серпня 2012 р.
+<br> за № 1400/21712 </p>
+</td>
+</tr>
+</table>
+</div>
+<p><a name="n4"></a>
+ВИМОГИ
+<br> до формату списку відкликаних сертифікатів </p>
+<p><a name="n5"></a>
+І. Загальні положення </p>
+<p><a name="n6"></a>
+1.1. Ці Вимоги визначають формат списку відкликаних сертифікатів.</p>
+<p><a name="n7"></a>
+1.2. Формати даних представлено у нотації ASN.1, визначеній у міжнародному стандарті ISO/IEC 8824 “Information technology - Open Systems Interconnection - Specification of Abstract Syntax Notation One (ASN.1)” / ДСТУ ISO/ІЕС 8824-3:2008 “Інформаційні технології. Нотація абстрактного синтаксису 1 (ASN.1)” - частина 3. Специфікація обмежень (ISO/IEC 8824-3:2002, IDT), затвердженому наказом Державного комітету України з питань технічного регулювання та споживчої політики від 26 грудня 2008 року № 508 (із змінами).</p>
+<p><a name="n8"></a>
+1.3. Усі структури даних кодують за правилами DER згідно з міжнародним стандартом ISO/IEC 8825-1:2002 “Information technology - ASN.1 Encoding Rules - Part 1: Specification of Basic Encoding Rules (BER), Canonical Encoding Rules (CER) and Distinguished Encoding Rules (DER)”.</p>
+<p><a name="n9"></a>
+1.4. Ці Вимоги засновані на національному стандарті України ДСТУ ISO/IEC 9594-8:2006 “Інформаційні технології. Взаємозв’язок відкритих систем. Каталог. Частина 8. Основні положення щодо сертифікації відкритих ключів та атрибутів”, затвердженому наказом Державного комітету України з питань технічного регулювання та споживчої політики від 27 грудня 2006 року № 374 (із змінами), та RFC 5280 “Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile”.</p>
+<p><a name="n10"></a>
+1.5. Ці Вимоги не дублюють стандарти ДСТУ ISO/IEC 9594-8:2006 та RFC 5280, а описують положення цих стандартів та формати полів. У разі виникнення розбіжностей між положеннями зазначених стандартів та положеннями цих Вимог застосовуються положення цих Вимог.</p>
+<p><a name="n11"></a>
+1.6. Положення цих Вимог є обов’язковими для програмно-технічних комплексів акредитованих центрів сертифікації ключів та надійних засобів електронного цифрового підпису. Правильність реалізації формату списку відкликаних сертифікатів у надійних засобах електронного цифрового підпису підтверджується сертифікатом відповідності або позитивним експертним висновком за результатами державної експертизи у сфері криптографічного захисту інформації.</p>
+<p><a name="n12"></a>
+1.7. Структура та формати кодування деяких полів наведені у <a href="/go/z1398-12">Вимогах до формату посиленого сертифіката відкритого ключа</a>, затверджених наказом Міністерства юстиції України, Адміністрації Державної служби спеціального зв’язку та захисту інформації України від 20 серпня 2012 року № 1236/5/453, зареєстрованих у Міністерстві юстиції України 20 серпня 2012 року за № 1398/21710 (далі - Вимоги до формату посиленого сертифіката відкритого ключа).</p>
+<p><a name="n13"></a>
+ІІ. Подання списку відкликаних сертифікатів </p>
+<p><a name="n14"></a>
+Список відкликаних сертифікатів (далі - CRL) має таку структуру:</p>
+<div><a name="n15"></a>
+<table width="100%" cellpadding="1" style="border-collapse: collapse;">
+<tr valign=top>
+<td colspan=3 width=1017 valign=top>
+<p>CertificateList ::= SEQUENCE {</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=25 valign=top>
+<p><br></p>
+</td>
+<td width=205 valign=top>
+<p>tbsCertList</p>
+</td>
+<td width=624 valign=top>
+<p>TBSCertList,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=25 valign=top>
+<p><br></p>
+</td>
+<td width=205 valign=top>
+<p>signatureAlgorithm</p>
+</td>
+<td width=624 valign=top>
+<p>AlgorithmIdentifier,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=25 valign=top>
+<p><br></p>
+</td>
+<td width=205 valign=top>
+<p>signatureValue</p>
+</td>
+<td width=624 valign=top>
+<p>BIT STRING }</p>
+</td>
+</tr>
+</table>
+</div>
+<p><a name="n16"></a>
+Поле “TBSCertList” є частиною CRL, що кодується за правилами DER та на яку за допомогою особистого ключа центрального засвідчувального органу, засвідчувального центру, акредитованого центру сертифікації ключів (далі - Центр) накладається електронний цифровий підпис (далі - ЕЦП).</p>
+<p><a name="n17"></a>
+Ідентифікатор криптоалгоритму ЕЦП міститься у полі “signatureAlgorithm”. Значення ЕЦП містить поле “signatureValue”.</p>
+<p><a name="n18"></a>
+Формат полів “signatureAlgorithm” та “signatureValue” відповідає форматам полів “signatureAlgorithm” та “signatureValue”, визначеним для сертифіката та наведеним у Вимогах до формату посиленого сертифіката відкритого ключа.</p>
+<p><a name="n19"></a>
+ІІІ. Структура TBSCertList списку відкликаних сертифікатів </p>
+<p><a name="n20"></a>
+3.1. Поле “TBSCertList ”має таку структуру:</p>
+<div><a name="n21"></a>
+<table width="100%" border=0 cellpadding=0 cellspacing=0>
+<tr valign=top>
+<td colspan=5 width=932 valign=top>
+<p>TBSCertList ::= SEQUENCE {</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30 valign=top>
+<p><br></p>
+</td>
+<td width=200 valign=top>
+<p>Version</p>
+</td>
+<td colspan=3 width=735 valign=top>
+<p>Version OPTIONAL,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30 valign=top>
+<p><br></p>
+</td>
+<td width=200 valign=top>
+<p>signature</p>
+</td>
+<td colspan=3 width=735 valign=top>
+<p>AlgoritmIdentifier,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30 valign=top>
+<p><br></p>
+</td>
+<td width=200 valign=top>
+<p>issuer</p>
+</td>
+<td colspan=3 width=735 valign=top>
+<p>Name,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30 height=36 valign=top>
+<p><br></p>
+</td>
+<td width=200 height=36 valign=top>
+<p>thisUpdate</p>
+</td>
+<td colspan=3 width=735 height=36 valign=top>
+<p>Time,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30 valign=top>
+<p><br></p>
+</td>
+<td width=200 valign=top>
+<p>nextUpdate</p>
+</td>
+<td colspan=3 width=735 valign=top>
+<p>Time,</p>
+</td>
+</tr>
+</table>
+</div>
+<div><a name="n22"></a>
+<table width="100%" border=0 cellpadding=0 cellspacing=0 style="border-color: #000000;">
+<tr valign=top>
+<td colspan=2>
+<p>revokedCertificates</p>
+</td>
+<td width=634>
+<p>SEQUENCE OF SEQUENCE {</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=28>
+<p><br></p>
+</td>
+<td width=203>
+<p>userCertificates</p>
+</td>
+<td width=634>
+<p>CertificatesSerialnumber,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=28>
+<p><br></p>
+</td>
+<td width=203>
+<p>revocationDate</p>
+</td>
+<td width=634>
+<p>Time,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=28>
+<p><br></p>
+</td>
+<td width=203>
+<p>crlEntryExtensions</p>
+</td>
+<td width=634>
+<p>Extensions OPTIONAL} OPTIONAL,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=28>
+<p><br></p>
+</td>
+<td colspan=2 width=831>
+<p>crlExtensions [0] EXPLICIT Extensions OPTIONAL}</p>
+</td>
+</tr>
+</table>
+</div>
+<p><a name="n23"></a>
+Опис структури наведено в таблиці 1.</p>
+<p><a name="n24"></a>
+Таблиця 1</p>
+<div><a name="n25"></a>
+<table width="100%" cellpadding="1" style="border-collapse: collapse;">
+<tr valign=top>
+<td width=264 valign=middle style="border: 1px solid #000000">
+<p>Назва поля англійською мовою</p>
+</td>
+<td width=396 valign=middle style="border: 1px solid #000000">
+<p>Назва поля українською мовою</p>
+</td>
+</tr>
+<tr valign=top>
+<td colspan=2 width=667 height=31 valign=middle style="border: 1px solid #000000">
+<p>Інформаційні поля CRL</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=264 height=24 valign=middle style="border: 1px solid #000000">
+<p>Version</p>
+</td>
+<td width=396 height=24 valign=middle style="border: 1px solid #000000">
+<p>номер версії</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=264 height=27 valign=middle style="border: 1px solid #000000">
+<p>signature</p>
+</td>
+<td width=396 height=27 valign=middle style="border: 1px solid #000000">
+<p>алгоритм ЕЦП</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=264 height=28 valign=middle style="border: 1px solid #000000">
+<p>issuer</p>
+</td>
+<td width=396 height=28 valign=middle style="border: 1px solid #000000">
+<p>реквізити Центру</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=264 height=28 valign=middle style="border: 1px solid #000000">
+<p>thisUpdate</p>
+</td>
+<td width=396 height=28 valign=middle style="border: 1px solid #000000">
+<p>час формування CRL</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=264 height=26 valign=middle style="border: 1px solid #000000">
+<p>nextUpdate</p>
+</td>
+<td width=396 height=26 valign=middle style="border: 1px solid #000000">
+<p>час наступного формування CRL</p>
+</td>
+</tr>
+<tr valign=top>
+<td colspan=2 width=667 height=39 valign=middle style="border: 1px solid #000000">
+<p>Елементи CRL, що містять інформацію про скасовані, блоковані та поновлені сертифікати (revokedCertificates)</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=264 height=28 valign=middle style="border: 1px solid #000000">
+<p>revokedCertificates</p>
+</td>
+<td width=396 height=28 valign=middle style="border: 1px solid #000000">
+<p>елементи CRL</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=264 height=27 valign=middle style="border: 1px solid #000000">
+<p>userCertificate</p>
+</td>
+<td width=396 height=27 valign=middle style="border: 1px solid #000000">
+<p>унікальний реєстраційний номер сертифіката</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=264 height=28 valign=middle style="border: 1px solid #000000">
+<p>revocationDate</p>
+</td>
+<td width=396 height=28 valign=middle style="border: 1px solid #000000">
+<p>час відкликання сертифіката</p>
+</td>
+</tr>
+<tr valign=top>
+<td colspan=2 width=667 height=28 valign=middle style="border: 1px solid #000000">
+<p>Розширення елементів CRL (crlEntryExtension)</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=264 height=27 valign=middle style="border: 1px solid #000000">
+<p>ReasonCode</p>
+</td>
+<td width=396 height=27 valign=middle style="border: 1px solid #000000">
+<p>причина відкликання сертифіката</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=264 height=28 valign=middle style="border: 1px solid #000000">
+<p>InvalidityDate</p>
+</td>
+<td width=396 height=28 valign=middle style="border: 1px solid #000000">
+<p>час компрометації особистого ключа</p>
+</td>
+</tr>
+<tr valign=top>
+<td colspan=2 width=667 height=28 valign=middle style="border: 1px solid #000000">
+<p>Розширення CRL (crlExtensions)</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=264 height=31 valign=middle style="border: 1px solid #000000">
+<p>AuthorityKeyIdentifier</p>
+</td>
+<td width=396 height=31 valign=middle style="border: 1px solid #000000">
+<p>ідентифікатор відкритого ключа Центру</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=264 height=28 valign=middle style="border: 1px solid #000000">
+<p>CRLNumber</p>
+</td>
+<td width=396 height=28 valign=middle style="border: 1px solid #000000">
+<p>серійний номер CRL</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=264 height=28 valign=middle style="border: 1px solid #000000">
+<p>СRLDistributionPoints (CDP)</p>
+</td>
+<td width=396 height=28 valign=middle style="border: 1px solid #000000">
+<p>точки розповсюдження CRL</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=264 height=29 valign=middle style="border: 1px solid #000000">
+<p>AuthorityInformationAccess (AIA)</p>
+</td>
+<td width=396 height=29 valign=middle style="border: 1px solid #000000">
+<p>доступ до інформації Центру</p>
+</td>
+</tr>
+<tr valign=top>
+<td colspan=2 width=667 height=29 valign=middle style="border: 1px solid #000000">
+<p>Додаткові розширення - 1 </p>
+</td>
+</tr>
+<tr valign=top>
+<td colspan=2 width=667 height=28 valign=middle style="border: 1px solid #000000">
+<p>Розширення повного CRL (CompleteCRL)</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=264 height=28 valign=middle style="border: 1px solid #000000">
+<p>FreshestCRL</p>
+</td>
+<td width=396 height=28 valign=middle style="border: 1px solid #000000">
+<p>точка розповсюдження часткового CRL</p>
+</td>
+</tr>
+<tr valign=top>
+<td colspan=2 width=667 height=28 valign=middle style="border: 1px solid #000000">
+<p>Розширення часткового CRL (DeltaCRL)</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=264 height=28 valign=middle style="border: 1px solid #000000">
+<p>DeltaCRLIndicator</p>
+</td>
+<td width=396 height=28 valign=middle style="border: 1px solid #000000">
+<p>серійний номер повного CRL</p>
+</td>
+</tr>
+<tr valign=top>
+<td colspan=2 width=667 height=28 valign=middle style="border: 1px solid #000000">
+<p> - 1 У разі використання повного та часткового CRL.</p>
+</td>
+</tr>
+</table>
+</div>
+<p><a name="n26"></a>
+3.2. Поле “Номер версії” (“Version”) містить значення 1 (1 байт), яке означає, що формат CRL відповідає версії 2 згідно із стандартом ДСТУ ISO/IEC 9594-8:2006.</p>
+<p><a name="n27"></a>
+3.3. Поле “Алгоритм електронного цифрового підпису” (“signature”) містить тільки ідентифікатор криптоалгоритму, що використовується Центром для накладення ЕЦП на CRL.</p>
+<p><a name="n28"></a>
+Формат та значення поля “signature” відповідають формату та значенню поля “signatureAlgorithm”, визначеному для сертифіката та наведеному у Вимогах до формату посиленого сертифіката відкритого ключа.</p>
+<p><a name="n29"></a>
+3.4. Поле “Реквізити Центру” (“issuer”) містить найменування та реквізити Центру, який сформував CRL.</p>
+<p><a name="n30"></a>
+Формат та значення поля “issuer” відповідають формату та значенню поля “subject” сертифіката Центру, що сформував CRL, наведеним у Вимогах до формату посиленого сертифіката відкритого ключа.</p>
+<p><a name="n31"></a>
+3.5. Поле “Час формування CRL” (“thisUpdate”) містить дату і час формування CRL Центром.</p>
+<p><a name="n32"></a>
+Формат поля “thisUpdate” відповідає формату поля “Time”, визначеному для сертифіката та наведеному у Вимогах до формату посиленого сертифіката відкритого ключа.</p>
+<p><a name="n33"></a>
+3.6. Поле “Час наступного формування CRL” (“nextUpdate”) містить дату і час наступного формування CRL Центром.</p>
+<p><a name="n34"></a>
+Дане поле є обов’язковим.</p>
+<p><a name="n35"></a>
+Формат поля “nextUpdate” відповідає формату поля “Time”, визначеному для сертифіката та наведеному у Вимогах до формату посиленого сертифіката відкритого ключа.</p>
+<p><a name="n36"></a>
+3.7. Елементи CRL.</p>
+<p><a name="n37"></a>
+3.7.1. Поле “Елементи CRL” (“revokedCertificates”) містить інформацію про скасовані, блоковані та поновлені сертифікати.</p>
+<p><a name="n38"></a>
+3.7.2. Формат поля “Унікальний реєстраційний номер сертифіката” (“userCertificate”) повинен відповідати формату поля “serialNumber”, визначеному для сертифіката та наведеному у Вимогах до формату посиленого сертифіката відкритого ключа.</p>
+<p><a name="n39"></a>
+3.7.3. Поле “Час відкликання сертифіката” (“revocationDate”) містить дату і час відкликання (скасування, блокування та поновлення) сертифіката.</p>
+<p><a name="n40"></a>
+Формат поля “revocationDate” відповідає формату поля “Time”, визначеному для сертифіката та наведеному у Вимогах до формату посиленого сертифіката відкритого ключа.</p>
+<p><a name="n41"></a>
+3.8. Розширення елементів CRL.</p>
+<p><a name="n42"></a>
+Для уточнення відомостей про відкликані сертифікати Центр може включати до елементів CRL додаткові дані, що розташовуються у розширеннях (поле “crlEntryExtensions”).</p>
+<p><a name="n43"></a>
+Формат поля “crlEntryExtensions” відповідає типу “Extensions”, визначеному для сертифіката та наведеному у Вимогах до формату посиленого сертифіката відкритого ключа.</p>
+<p><a name="n44"></a>
+Об’єктні ідентифікатори розширень визначаються за допомогою ідентифікатора:</p>
+<p><a name="n45"></a>
+id-ce OBJECT IDENTIFIER ::= { joint-iso-ccitt(2) ds(5) 29 }</p>
+<p><a name="n46"></a>
+Цими Вимогами визначаються такі розширення елементів списку:</p>
+<p><a name="n47"></a>
+“Причина відкликання сертифіката”;</p>
+<p><a name="n48"></a>
+“Час компрометації особистого ключа”.</p>
+<p><a name="n49"></a>
+3.8.1. Розширення “Причина відкликання сертифіката” (“reasonCode”) уточнює причину відкликання сертифіката і повинно бути визначене як некритичне.</p>
+<p><a name="n50"></a>
+Дане розширення є обов’язковим.</p>
+<p><a name="n51"></a>
+id-ce-crlReasons OBJECT IDENTIFIER ::= {id-ce 21}</p>
+<p><a name="n52"></a>
+Коди причин відкликання сертифіката:</p>
+<div><a name="n53"></a>
+<table width="100%" cellpadding="1" style="border-collapse: collapse;">
+<tr valign=top>
+<td colspan=4 width="144%" height=10 valign=top>
+<p>CRLReason::= ENUMERATED {</p>
+</td>
+</tr>
+<tr valign=top>
+<td width="3%" height=12 valign=top>
+<p><br></p>
+</td>
+<td width="30%" height=12 valign=top>
+<p>unspecified</p>
+</td>
+<td width="6%" height=12 valign=top>
+<p>(0),</p>
+</td>
+<td width="57%" height=12 valign=top>
+<p>причина не визначена</p>
+</td>
+</tr>
+<tr valign=top>
+<td width="3%" height=12 valign=top>
+<p><br></p>
+</td>
+<td width="30%" height=12 valign=top>
+<p>keyCompromise</p>
+</td>
+<td width="6%" height=12 valign=top>
+<p>(1),</p>
+</td>
+<td width="57%" height=12 valign=top>
+<p>компрометація особистого ключа</p>
+</td>
+</tr>
+<tr valign=top>
+<td width="3%" height=12 valign=top>
+<p><br></p>
+</td>
+<td width="30%" height=12 valign=top>
+<p>cACompromise</p>
+</td>
+<td width="6%" height=12 valign=top>
+<p>(2),</p>
+</td>
+<td width="57%" height=12 valign=top>
+<p>компрометація особистого ключа акредитованого центру</p>
+</td>
+</tr>
+<tr valign=top>
+<td width="3%" height=12 valign=top>
+<p><br></p>
+</td>
+<td width="30%" height=12 valign=top>
+<p>affiliationChanged</p>
+</td>
+<td width="6%" height=12 valign=top>
+<p>(3),</p>
+</td>
+<td width="57%" height=12 valign=top>
+<p>зміна даних про власника сертифіката</p>
+</td>
+</tr>
+<tr valign=top>
+<td width="3%" height=12 valign=top>
+<p><br></p>
+</td>
+<td width="30%" height=12 valign=top>
+<p>superseded</p>
+</td>
+<td width="6%" height=12 valign=top>
+<p>(4),</p>
+</td>
+<td width="57%" height=12 valign=top>
+<p>сертифікат ключа замінений</p>
+</td>
+</tr>
+<tr valign=top>
+<td width="3%" height=12 valign=top>
+<p><br></p>
+</td>
+<td width="30%" height=12 valign=top>
+<p>cessationOfOperation</p>
+</td>
+<td width="6%" height=12 valign=top>
+<p>(5),</p>
+</td>
+<td width="57%" height=12 valign=top>
+<p>припинення операцій - 1 </p>
+</td>
+</tr>
+<tr valign=top>
+<td width="3%" height=12 valign=top>
+<p><br></p>
+</td>
+<td width="30%" height=12 valign=top>
+<p>certificateHold</p>
+</td>
+<td width="6%" height=12 valign=top>
+<p>(6),</p>
+</td>
+<td width="57%" height=12 valign=top>
+<p>сертифікат ключа блоковано</p>
+</td>
+</tr>
+<tr valign=top>
+<td width="3%" height=12 valign=top>
+<p><br></p>
+</td>
+<td width="30%" height=12 valign=top>
+<p>removeFromCRL</p>
+</td>
+<td width="6%" height=12 valign=top>
+<p>(8),</p>
+</td>
+<td width="57%" height=12 valign=top>
+<p>сертифікат ключа поновлено</p>
+</td>
+</tr>
+<tr valign=top>
+<td width="3%" height=12 valign=top>
+<p><br></p>
+</td>
+<td width="30%" height=12 valign=top>
+<p>privilegeWithdrawn</p>
+</td>
+<td width="6%" height=12 valign=top>
+<p>(9) }</p>
+</td>
+<td width="57%" height=12 valign=top>
+<p>повноваження скасовано - 2 }</p>
+</td>
+</tr>
+</table>
+</div>
+<p><a name="n54"></a>
+- 1 cessationOfOperation - вказує, що сертифікат більше не потрібний для мети, для якої був виданий, але немає причин підозрювати, що особистий ключ був скомпрометований.</p>
+<p><a name="n55"></a>
+- 2 privilegeWithdrawn - вказує, що сертифікат був анульований, тому що було скасовано (відкликано) повноваження, що міститься в цьому сертифікаті.</p>
+<p><a name="n56"></a>
+3.8.2. Розширення “Час компрометації особистого ключа” (“іnvalidityDate”) містить час, коли стало відомо про компрометацію ключа або про втрату чинності сертифіката. Розширення визначається як некритичне.</p>
+<p><a name="n57"></a>
+Дане розширення є обов’язковим.</p>
+<p><a name="n58"></a>
+id-ce-invalidityDate OBJECT IDENTIFIER ::= { id-ce 24 }</p>
+<p><a name="n59"></a>
+invalidityDate ::= GeneralizedTime</p>
+<p><a name="n60"></a>
+3.9. Розширення CRL.</p>
+<p><a name="n61"></a>
+Для уточнення відомостей про CRL Центр може включати додаткові дані, що розташовуються у розширеннях (поле “crlExtensions”).</p>
+<p><a name="n62"></a>
+Формат поля “crlExtensions” відповідає типу “Extensions”, визначеному для сертифіката та наведеному у Вимогах до формату посиленого сертифіката відкритого ключа.</p>
+<p><a name="n63"></a>
+Цими Вимогами визначаються такі розширення CRL:</p>
+<p><a name="n64"></a>
+“Ідентифікатор відкритого ключа Центру”;</p>
+<p><a name="n65"></a>
+“Серійний номер CRL”;</p>
+<p><a name="n66"></a>
+“Точки розповсюдження CRL”;</p>
+<p><a name="n67"></a>
+“Доступ до інформації центру сертифікації”.</p>
+<p><a name="n68"></a>
+3.9.1. Розширення “Ідентифікатор відкритого ключа Центру” (“authorityKeyIdentifier”) використовується для ідентифікації відкритого ключа, що відповідає особистому ключу, за допомогою якого Центр здійснює накладання ЕЦП на CRL.</p>
+<p><a name="n69"></a>
+Дане розширення є обов’язковим та некритичним.</p>
+<p><a name="n70"></a>
+Формат розширення “authorityKeyIdentifier” відповідає формату розширення “authoritykeyidentifier”, визначеному для сертифіката та наведеному у Вимогах до формату посиленого сертифіката відкритого ключа.</p>
+<p><a name="n71"></a>
+3.9.2. Розширення “Серійний номер CRL” (“CRLNumber”) повинно бути визначено як некритичне, а його значення повинно бути додатним цілим числом, що не перевищує 20 байт (1 &lt;= CRLNumber &lt; 2 - 160 ).</p>
+<p><a name="n72"></a>
+Дане розширення є обов’язковим.</p>
+<p><a name="n73"></a>
+Центр забезпечує унікальні серійні номери для кожного опублікованого CRL у наростаючому порядку.</p>
+<p><a name="n74"></a>
+id-ce- OBJECT IDENTIFIER ::= { id-ce 20 }</p>
+<p><a name="n75"></a>
+CRLNumber ::= INTEGER (0…MAX).</p>
+<p><a name="n76"></a>
+3.9.3. Розширення “Точки розповсюдження CRL” (“cRLDistributionPoints”) визначає загальнодоступну точку розповсюдження даного CRL.</p>
+<p><a name="n77"></a>
+Дане розширення є необов’язковим та некритичним.</p>
+<div><a name="n78"></a>
+<table width="100%" cellpadding="1" style="border-collapse: collapse;">
+<tr valign=top>
+<td colspan=4 width=1017 valign=top>
+<p>id-ce-cRLDistributionPoints OBJECT IDENTIFIER::= {id-ce 31}
+<br>CRLDistributionPoints::= SEQUENCE SIZE (1.. MAX) OF DistributionPoint</p>
+</td>
+</tr>
+<tr valign=top>
+<td colspan=4 width=844 valign=top>
+<p>DistributionPoint::= SEQUENCE {</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=20 valign=top><br>
+</td>
+<td width=242 valign=top>
+<p>distributionPoint</p>
+</td>
+<td width=82 valign=top>
+<p>[0]</p>
+</td>
+<td width=511 valign=top>
+<p>DistributionPointName OPTIONAL,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=20 valign=top><br>
+</td>
+<td width=242 valign=top>
+<p>reasons</p>
+</td>
+<td width=82 valign=top>
+<p>[1]</p>
+</td>
+<td width=511 valign=top>
+<p>ReasonFlags OPTIONAL,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=20 valign=top><br>
+</td>
+<td width=242 valign=top>
+<p>СRLIssuer</p>
+</td>
+<td width=82 valign=top>
+<p>[2]</p>
+</td>
+<td width=511 valign=top>
+<p>GeneralNames OPTIONAL}</p>
+</td>
+</tr>
+</table>
+</div>
+<p><a name="n79"></a>
+Поля “reasons” та “cRLIssuer” не використовуються.</p>
+<p><a name="n80"></a>
+Розширення “cRLDistributionPoints” описане у Вимогах до формату посиленого сертифіката відкритого ключа.</p>
+<p><a name="n81"></a>
+Значення поля “distributionPoint” повинно відповідати розширенню “cRLDistributionPoints” у сертифікатах даного Центру.</p>
+<p><a name="n82"></a>
+3.9.4. Розширення “Доступ до інформації Центру” (“AuthorityInfoAccess”) призначається для визначення місця розташування (доступу) для отримання сертифіката підпису CRL.</p>
+<div><a name="n83"></a>
+<table width="100%" border=0 cellpadding=0 cellspacing=0>
+<tr valign=top>
+<td colspan=4 width=888>
+<p>id-pe-authorityInfoAccess OBJECT IDENTIFIER ::= { id-pe 1 }</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=32><br>
+</td>
+<td colspan=3 width=828>
+<p>AuthorityInfoAccessSyntax ::=</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=32><br>
+</td>
+<td width=70>
+<p><br></p>
+</td>
+<td colspan=2 width=570>
+<p>SEQUENCE SIZE (1..MAX) OF AccessDescription</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=32><br>
+</td>
+<td colspan=3 width=850>
+<p>AccessDescription ::= SEQUENCE {</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=32><br>
+</td>
+<td width=70>
+<p><br></p>
+</td>
+<td width=170>
+<p>accessMethod</p>
+</td>
+<td width=595>
+<p>OBJECT IDENTIFIER,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=32><br>
+</td>
+<td width=70>
+<p><br></p>
+</td>
+<td width=170>
+<p>accessLocation</p>
+</td>
+<td width=595>
+<p>GeneralName }</p>
+</td>
+</tr>
+<tr valign=top>
+<td colspan=4 width=894>
+<p>id-pkix OBJECT IDENTIFIER ::=</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=32><br>
+</td>
+<td width=70>
+<p><br></p>
+</td>
+<td colspan=2 width=765>
+<p>{ iso(1) identified-organization(3) dod(6) internet(1)</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=32><br>
+</td>
+<td width=70>
+<p><br></p>
+</td>
+<td colspan=2 width=765>
+<p>security(5) mechanisms(5) pkix(7) }</p>
+</td>
+</tr>
+<tr valign=top>
+<td colspan=4 width=894>
+<p>-- PKIX arcs</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=32><br>
+</td>
+<td colspan=3 width=862>
+<p>id-pe OBJECT IDENTIFIER ::= { id-pkix 1 }
+<br>id-ad OBJECT IDENTIFIER ::= { id-pkix 48 }</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=32><br>
+</td>
+<td colspan=3 width=862>
+<p>id-ad-caIssuers OBJECT IDENTIFIER ::= { id-ad 2 }</p>
+</td>
+</tr>
+</table>
+</div>
+<p><a name="n84"></a>
+Дане розширення є некритичним.</p>
+<p><a name="n85"></a>
+Це розширення є обов’язковим за умови використання для підпису CRL ключа, відмінного від ключа підпису сертифікатів, та повинно включати щонайменше одне поле “AccessDescription” із зазначенням методу доступу accessMethod = id-ad-caIssuers.</p>
+<p><a name="n86"></a>
+Об’єктний ідентифікатор “id-ad-caIssuers” використовується для отримання сертифіката, який можна використовувати для перевірки підпису на CRL.</p>
+<p><a name="n87"></a>
+Поле “AccessDescription” повинно мати значення accessLocation, яке відповідає точці доступу до сертифіката відкритого ключа, відповідного особистому ключу, за допомогою якого накладено ЕЦП на CRL, у вигляді HTTP або LDAP URI.</p>
+<p><a name="n88"></a>
+3.9.5. Розширення “Точка розповсюдження часткового CRL” (“freshestCRL”) визначає місце розташування часткового CRL.</p>
+<p><a name="n89"></a>
+Дане розширення є необов’язковим та некритичним.</p>
+<div><a name="n90"></a>
+<table width="100%" border=0 cellpadding=0 cellspacing=0 style="border-color: #000000;">
+<tr valign=top>
+<td colspan=4 width=855>
+<p>freshestCRL EXTENSION ::= {</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30 height=38><br>
+</td>
+<td colspan=3 width=570 height=38>
+<p>SYNTAX CRLDistPointsSyntax
+<br>IDENTIFIED BY id-ce-freshestCRL }</p>
+</td>
+</tr>
+<tr valign=top>
+<td colspan=4 width=862>
+<p>id-ce-freshestCRL OBJECT IDENTIFIER ::= {id-ce 46}</p>
+</td>
+</tr>
+<tr valign=top>
+<td colspan=4 width=862>
+<p>CRLDistPointsSyntax ::= SEQUENCE SIZE (1..MAX) OF DistributionPoint</p>
+</td>
+</tr>
+<tr valign=top>
+<td colspan=4 width=862>
+<p>DistributionPoint ::= SEQUENCE {</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30><br>
+</td>
+<td width=211>
+<p>distributionPoint</p>
+</td>
+<td width=57>
+<p>[0]</p>
+</td>
+<td width=571>
+<p>DistributionPointName,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30><br>
+</td>
+<td width=211>
+<p>reasons</p>
+</td>
+<td width=57>
+<p>[1]</p>
+</td>
+<td width=571>
+<p>ReasonFlags OPTIONAL,</p>
+</td>
+</tr>
+<tr valign=top>
+<td width=30><br>
+</td>
+<td width=211>
+<p>СRLIssuer</p>
+</td>
+<td width=57>
+<p>[2]</p>
+</td>
+<td width=571>
+<p>GeneralNames OPTIONAL}</p>
+</td>
+</tr>
+</table>
+</div>
+<p><a name="n91"></a>
+Значення типу “DistributionPointName” визначено в розширенні “Точка розповсюдження CRL”.</p>
+<p><a name="n92"></a>
+Поля “reasons та “cRLIssuer” не використовуються.</p>
+<p><a name="n93"></a>
+IV. Частковий CRL </p>
+<p><a name="n94"></a>
+4.1. Часткові CRL (DeltaCRL) використовуються для доповнення відомостей про зміни статусів сертифікатів, що відбулись після останньої публікації повного CRL.</p>
+<p><a name="n95"></a>
+Використання часткових CRL (DeltaCRL) Центрами є необов’язковим.</p>
+<p><a name="n96"></a>
+4.2. Структура та формат часткового CRL.</p>
+<p><a name="n97"></a>
+Структура та формат часткового CRL відповідають структурі та формату повного CRL, крім додаткових розширень елементів “CRL freshestCRL”, які в частковому CRL не використовуються, та розширення “deltaCRLIndicator”, яке у частковому CRL є обов’язковим.</p>
+<p><a name="n98"></a>
+4.3. Розширення часткового CRL.</p>
+<p><a name="n99"></a>
+Розширення “Серійний номер повного CRL” (“deltaCRLIndicator”) є ознакою часткового CRL і повинно бути визначене як критичне. Значенням цього розширення є серійний номер повного CRL, дані якого оновлюються у частковому CRL.</p>
+<p><a name="n100"></a>
+id-ce-deltaCRLIndicator OBJECT IDENTIFIER ::= { id-ce 27 }</p>
+<p><a name="n101"></a>
+BaseCRLNumber ::= CRLNumber</p>
+<p><a name="n102"></a>
+4.4. Особливості використання часткового CRL.</p>
+<p><a name="n103"></a>
+Серійні номери часткових CRL повинні включатись у загальну послідовність серійних номерів CRL Центру.</p>
+<div><a name="n104"></a>
+<table width="100%" border=0 cellpadding=0 cellspacing=0>
+<tr valign=top>
+<td width="42%">
+<p> Директор Департаменту
+<br> нотаріату, банкрутства
+<br> та функціонування
+<br> центрального засвідчувального
+<br> органу Міністерства
+<br> юстиції України </p>
+</td>
+<td width="70%">
+<p><br><br><br><br><br> К.І. Чижмарь </p>
+</td>
+</tr>
+</table>
+</div>
+<div><a name="n105"></a>
+<table width="100%" border=0 cellpadding=0 cellspacing=0>
+<tr valign=top>
+<td width="42%">
+<p> Директор Департаменту
+<br> криптографічного захисту
+<br> інформації Адміністрації
+<br> Державної служби спеціального
+<br> зв’язку та захисту
+<br> інформації України </p>
+</td>
+<td width="70%">
+<p><br><br><br><br><br> А.І. Пушкарьов
+<br> <br> </p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<hr>
+<div align=right>&copy; <a href="https://data.rada.gov.ua">Офіційний вебпортал парламенту України<br />https://www.rada.gov.ua/</a></div>
+</body></html>
